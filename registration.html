@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital World</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!--<link href="css/fontawesome.css" rel="stylesheet" type="text/css">	-->
+<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">	
+<link href="css/all.min.css" rel="stylesheet" type="text/css">	
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body>
+	
+	<div class="container-fluid r_form_main">
+		<div class="container r_form_container">
+			
+			<div class="col-lg-12 r_form">
+				
+				<div class="col-lg-6 col-md-12 col-12 d-md-none d-lg-block">
+					<div class="r_form_img">
+						<img src="images/Sign up.png" class="img-fluid" alt="image">
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-12 col-12 r_form_con">
+					<h2 class="text-center head">Get Start</h2>
+					<p class="text-center subHead">Already have an account?<a class="text-decoration-none ms-1" style="color: darkseagreen" href="login.html">Sign in</a></p>
+					<form action="#" method="post" onSubmit="return validation();">
+						<label>Name</label><br>
+						<input type="text" id="r_name" name="r_name" onKeyUp="removeValidation('r_name',1);"><br>
+						
+						<label>Email</label><br>
+						<input type="email" id="r_email" name="r_email" onKeyUp="removeValidation('r_email',1);"><br>
+
+						
+						<label>Password</label><br>
+						<input type="password" id="r_password" name="r_password" onKeyUp="removeValidation('r_password',1);"><br>
+						<span id="regPasswordShowIcon" class="regPasswordShowIcon"><i class="fa-solid fa-eye"></i></span>
+						<span id="regPasswordHideIcon" class="regPasswordHideIcon"><i class="fa-solid fa-eye-slash"></i></span>
+
+						
+						<label>Phone</label><br>
+						<input type="text" id="r_phone" name="r_phone" onKeyUp="removeValidation('r_phone',1);"><br>						
+						
+						<center><input type="submit" id="r_btn" name="r_btn" value="Sign Up"></center>
+						<p class="text-center py-4 m-0">or sign up with</p>
+						<div class="r_form_icons">
+							<div class="r_form_i1"><a href="#"><i class="fa-brands fa-google" style="color: darkseagreen"></i></a></div>
+							<div class="r_form_i2"><a href="#"><i class="fa-brands fa-facebook-f" style="color: darkseagreen"></i></a></div>
+							<div class="r_form_i3"><a href="#"><i class="fa-brands fa-twitter" style="color: darkseagreen"></i></a></div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+
+
+
+			
+			
+		</div>
+		<div class="cl"></div>
+	</div>			
+
+	
+<script>
+		//password hide and show
+
+document.addEventListener('DOMContentLoaded', () => {
+		const passwordField = document.getElementById('r_password');
+		// alert(passwordField);
+		const regPasswordShowIcon = document.getElementById('regPasswordShowIcon');
+		const regPasswordHideIcon = document.getElementById('regPasswordHideIcon');
+
+		regPasswordShowIcon.style.display = 'none';
+		regPasswordHideIcon.style.display = 'none';
+
+		passwordField.addEventListener('input', () => {
+			// alert("kdgj");
+			if (passwordField.value.length > 0) {
+				regPasswordShowIcon.style.display = 'block';
+			} else {
+				regPasswordShowIcon.style.display = 'none';
+			}
+		});
+
+
+		regPasswordShowIcon.addEventListener('click', () => {
+			showAndHide(passwordField, regPasswordHideIcon, regPasswordShowIcon);
+		});
+
+		regPasswordHideIcon.addEventListener('click', () =>{
+			showAndHide(passwordField, regPasswordHideIcon, regPasswordShowIcon);
+
+		});	
+	});
+
+</script>
+
+	
+<!--<script src="js/fontawesome.js"></script>	-->
+<script src="js/fontawesome.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/script.js"></script>	
+</body>
+</html>

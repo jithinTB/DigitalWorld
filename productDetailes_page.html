@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Digital World</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/fontawesome.css" rel="stylesheet" type="text/css">	-->
+	<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- slick slider css -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+</head>
+
+<body>
+
+	<!--Navbar-->
+
+	<div class="container-fluid p-0 menubar1">
+		<div class="container">
+			<div class="col-3 text-center float-start text-black-50 welcome_txt">Welcome&nbsp;Our&nbsp;Shop</div>
+			<div class="col-2 float-end login"><a class="text-decoration-none" href="login.html"><i class="fa-solid fa-user"></i><span class="ms-1">Log in</span></a></div>
+			<div class="col-2 float-end registration"><a class="text-decoration-none" href="registration.html"><i class="fa-solid fa-user"></i><span class="ms-1">Register</span></a></div>
+		</div>
+		<div class="cl"></div>
+		<hr class="m-0">
+	</div>
+
+	<div class="container-fluid p-0 menubar2">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-6 col-md-3 logo text-center"><a class="text-decoration-none" href="index_home.html">Digital World</a></div>
+
+				<div class="col-6 col-md-9">
+					<div class="col-9 search_div">
+						<form>
+							<input type="search" id="nav_search" placeholder="What are you looking for?">
+							<button id="nav_search_Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+						</form>
+					</div>
+
+					<div class="col-sm-12 col-md-3 menubar2_icons d-flex align-content-between justify-content-around">
+						<div class="favorite"><a onclick="msg()" class="text-decoration-none" href="#"><i class="fa-regular fa-heart fa-xl"></i></a></div>
+						<div class="cart"><a class="text-decoration-none" href="cart.html"><i class="fa-solid fa-cart-plus fa-xl"></i></a></div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="cl"></div>
+	</div>
+
+	<div class="container-fluid p-0 menubar3">
+		<div class="container">
+
+			<div class="col-3">
+				<div class="categry_section">
+					<div class="select_categry">All categaries<span class="float-end"><i class="fa-solid fa-angle-down"></i></span></div>
+					<div class="categry_items">
+						<div>Phone</div>
+						<div>Laptop</div>
+						<div>Tv</div>
+						<div>Headphone</div>
+						<div>Watch</div>
+						<div>Camera</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-8 menu">
+				<div class="menu_link">
+					<a class="text-decoration-none menuText" href="index.html">Home</a>
+					<a class="text-decoration-none menuIcon" href="index.html"><i class="fa-solid fa-house"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="about.html">About</a>
+					<a class="text-decoration-none menuIcon" href="about.html"><i class="fa-solid fa-circle-info"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="product_page.html">Products</a>
+					<a class="text-decoration-none menuIcon" href="product_page.html"><i class="fa-solid fa-store"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="contact.htl">Contact</a>
+					<a class="text-decoration-none menuIcon" href="contact.htl"><i class="fa-solid fa-phone"></i></a>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-1 menu_toggle" id="menu_toggle">
+				<i class="fa-solid fa-bars fa-xl"></i>
+			</div>
+		</div>
+		<div class="cl"></div>
+		<div class="responsive_menu" id="responsive_menu">
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="index_home.php">Home</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">About</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="index_product_page.php">Products</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">Contact</a></div>
+			<div class="responsive_menu_link_search">
+				<form>
+					<input type="text" id="responsive_search" placeholder="Search Your Products">
+					<button id="responsive_search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+	
+			<!-- start-->
+	<div class="container-fluid pro_detailes_page">
+		<div class="container">
+			
+				 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+					<li class="breadcrumb-item"><a class="text-decoration-none text-black-50" href="index.html">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Product Details</li>
+				  </ol>
+			</nav>
+			
+			<div class="row">
+							
+			<div class="col-4 pro_detailes_page_img">
+				<div class="col-4 ">
+					<div class="col-12 pro_detailes_page_subimg"><img src="images/phonee.png" class="img-fluid" alt="sub image"></div>
+					<div class="col-12 pro_detailes_page_subimg"><img src="images/phonee.png" class="img-fluid" alt="sub image"></div>
+					<div class="col-12 pro_detailes_page_subimg"><img src="images/phonee.png" class="img-fluid" alt="sub image"></div>
+					<div class="col-12 pro_detailes_page_subimg"><img src="images/phonee.png" class="img-fluid" alt="sub image"></div>
+				</div>
+				
+				<div class="col-8">
+					<img src="images/upload_images/iphone 16.png" class="img-fluid" alt="product image">
+				</div>
+			</div>
+			
+			
+			<div class="col-6 pro_detailes_page_con">
+				<h2>Iphone 16</h2>
+				<p>₹160000</p>
+				
+				<span>Color</span>
+				<div class="color_dots">
+					<div class="dot1"><span></span></div>
+					<div class="dot2"></div>
+					<div class="dot3"></div>
+					<div class="dot4"></div>
+				</div>
+				
+				<span>Storage</span>
+				<div class="storage_con">
+					<div class="storage_box1"><a class="text-decoration-none" href="#">128</a></div>
+					<div class="storage_box2"><a class="text-decoration-none" href="#">256</a></div>
+				</div>
+				
+				<span>Quantity</span><br>
+						<div class="counter">
+							<button onClick="decrease(this)">-</button>
+							<span class="number">1</span>
+							<button onClick="increase(this)">+</button>
+						</div>
+	
+								
+	<script>
+		function increase(btn) {
+			let numberSpan = btn.parentElement.querySelector('.number');
+			let qty=document.getElementById('pro_quantity');
+			numberSpan.innerText = parseInt(numberSpan.innerText) + 1;
+			qty.value=numberSpan.innerText;
+		}
+
+		function decrease(btn) {
+			let numberSpan = btn.parentElement.querySelector('.number');
+			let qty=document.getElementById('pro_quantity');
+			let count = parseInt(numberSpan.innerText);
+			if (count > 1) {
+				numberSpan.innerText = count - 1;
+				qty.value=numberSpan.innerText;
+
+			}
+		}
+	</script>	
+				<form action="cart.php" method="post">
+					<input type="hidden" name="pro_id" value="<?php echo $row['pro_id'];?>">				
+					<input type="hidden" name="pro_price" value="<?php echo $row['pro_price'];?>">
+					<input type="hidden" name="pro_quantity" id="pro_quantity" value="1">
+					<div class="pro_detailePage_btns">
+						<button type="button" class="pro_detailePage_btn1">Buy Now</button>
+						<input type="submit" class="pro_detailePage_btn2"  name="cart_btn" value="Add To Cart">
+					</div>
+				</form>
+			</div>
+								
+		</div>
+			
+		</div>
+		<div class="cl"></div>
+	</div>			
+				<!-- end-->
+	
+	
+	
+	
+<!--	Footer-->
+<div class="container-fluid footer">
+	<div class="container footer_container">
+		
+		<div class="col-12 col-md-6 col-lg-3 footer_con1">
+			<h5>Digital World</h5>
+			<p>Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere orci dapibus auctor</p>
+			<div class="fooer_icons d-flex gap-lg-5 gap-md-3 mt-4">
+				<div class="f_icon"><i class="fa-brands fa-facebook-f"></i></div>
+				<div class="f_icon"><i class="fa-brands fa-twitter"></i></div>
+				<div class="f_icon"><i class="fa-brands fa-instagram"></i></div>
+			</div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con2">
+			<h5>Quick Links</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_home.php">Home</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">About</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_product_page.php">Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Contact</a></div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con3">
+			<h5>Shop Now</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Collections</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Featured Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Trending Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">New Arrivals Products</a></div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con4">
+			<h5>Get Help</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">FAQ</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Shipping</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Return</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Order Status</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Payment Options</a></div>
+		</div>
+		
+		<div class="col-12 col-md-12 col-lg-3  text-md-center text-sm-start footer_con5">
+			<h5>Contact Us</h5>
+			<button>Get In Touch<span><i class="fa-solid fa-arrow-right"></i></span></button>
+		</div>
+		
+	<div class="cl"></div>		
+	</div>
+
+</div>	
+
+	
+<!--<script src="js/fontawesome.js"></script>	-->
+<script src="js/fontawesome.min.js"></script>
+<script src="js/all.min.js"></script>
+
+	<!-- bootstrap js -->
+<script src="bootstrap/js/bootstrap.js"></script>
+
+	<!-- slick slider js -->
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

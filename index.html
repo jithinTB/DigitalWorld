@@ -1,0 +1,917 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Digital World</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/fontawesome.css" rel="stylesheet" type="text/css">	-->
+	<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- slick slider css -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+</head>
+
+<body>
+
+	<!--Navbar-->
+
+	<div class="container-fluid p-0 menubar1">
+		<div class="container">
+			<div class="col-3 text-center float-start text-black-50 welcome_txt">Welcome&nbsp;Our&nbsp;Shop</div>
+			<div class="col-2 float-end login"><a class="text-decoration-none" href="login.html"><i class="fa-solid fa-user"></i><span class="ms-1">Log in</span></a></div>
+			<div class="col-2 float-end registration"><a class="text-decoration-none" href="registration.html"><i class="fa-solid fa-user"></i><span class="ms-1">Register</span></a></div>
+		</div>
+		<div class="cl"></div>
+		<hr class="m-0">
+	</div>
+
+	<div class="container-fluid p-0 menubar2">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-6 col-md-3 logo text-center"><a class="text-decoration-none" href="index_home.html">Digital World</a></div>
+
+				<div class="col-6 col-md-9">
+					<div class="col-9 search_div">
+						<form>
+							<input type="search" id="nav_search" placeholder="What are you looking for?">
+							<button id="nav_search_Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+						</form>
+					</div>
+
+					<div class="col-sm-12 col-md-3 menubar2_icons d-flex align-content-between justify-content-around">
+						<div class="favorite"><a onclick="msg()" class="text-decoration-none" href="#"><i class="fa-regular fa-heart fa-xl"></i></a></div>
+						<div class="cart"><a class="text-decoration-none" href="cart.html"><i class="fa-solid fa-cart-plus fa-xl"></i></a></div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="cl"></div>
+	</div>
+
+	<div class="container-fluid p-0 menubar3">
+		<div class="container">
+
+			<div class="col-3">
+				<div class="categry_section">
+					<div class="select_categry">All categaries<span class="float-end"><i class="fa-solid fa-angle-down"></i></span></div>
+					<div class="categry_items">
+						<div>Phone</div>
+						<div>Laptop</div>
+						<div>Tv</div>
+						<div>Headphone</div>
+						<div>Watch</div>
+						<div>Camera</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-8 menu">
+				<div class="menu_link">
+					<a class="text-decoration-none menuText" href="index.html">Home</a>
+					<a class="text-decoration-none menuIcon" href="index.html"><i class="fa-solid fa-house"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="about.html">About</a>
+					<a class="text-decoration-none menuIcon" href="about.html"><i class="fa-solid fa-circle-info"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="product_page.html">Products</a>
+					<a class="text-decoration-none menuIcon" href="product_page.html"><i class="fa-solid fa-store"></i></a>
+				</div><div class="menu_link">
+					<a class="text-decoration-none menuText" href="contact.htl">Contact</a>
+					<a class="text-decoration-none menuIcon" href="contact.htl"><i class="fa-solid fa-phone"></i></a>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-1 menu_toggle" id="menu_toggle">
+				<i class="fa-solid fa-bars fa-xl"></i>
+			</div>
+		</div>
+		<div class="cl"></div>
+		<div class="responsive_menu" id="responsive_menu">
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="index_home.php">Home</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">About</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="index_product_page.php">Products</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">Contact</a></div>
+			<div class="responsive_menu_link_search">
+				<form>
+					<input type="text" id="responsive_search" placeholder="Search Your Products">
+					<button id="responsive_search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+				<!--banner-->
+<div class="container-fluid banner_main p-0"> 
+	<div class="container">
+    <div class="banner">    
+		
+        <div class="banner_scroll">
+			<div class="col-8 banner_con">
+            		<p class="fw-light sub_head">BEST PRICE</p>
+					<h1>SMART<br><span class="banner_spantxt">PHONES</span></h1>
+					<hr>
+					<p class="banner_para">Fusce semper rhoncus dignissim Curabitur dapibus convallis varius Suspendisse sem urna, ullamcorper eget porttitor ut, sagittis in justo. Vestibulum egestas nulla.</p>
+					<button class="banner_btn1">Learn More</button>
+					<button class="banner_btn2">Learn More</button>
+			</div>
+
+			<div class="col-4 banner_img">
+				<img src="images/upload_imagesiphone_16__flbknhdndb22_xlarge.jpg" alt="...">
+			</div>
+    	</div>
+
+		
+        <div class="banner_scroll">
+			<div class="col-8 banner_con">
+            		<p class="fw-light sub_head">BEST PRICE</p>
+					<h1>SMART<br><span class="banner_spantxt">PHONES</span></h1>
+					<hr>
+					<p class="banner_para">Fusce semper rhoncus dignissim Curabitur dapibus convallis varius Suspendisse sem urna, ullamcorper eget porttitor ut, sagittis in justo. Vestibulum egestas nulla.</p>
+					<button class="banner_btn1">Learn More</button>
+					<button class="banner_btn2">Learn More</button>
+			</div>
+
+			<div class="col-4 banner_img">
+				<img src="images/upload_imagesiphone_16__flbknhdndb22_xlarge.jpg" alt="...">
+			</div>
+    	</div>
+
+    </div>
+    </div>
+    <div class="cl"></div>
+</div>
+
+
+
+
+
+	
+				<!--Products Categories start-->
+	
+	<div class="container-fluid Pro_categery_sec">
+		<h2 class="text-center">Our Best Categories</h2>
+		
+		<div class="container">
+			<div class="col-12 categry_one">
+				<div class="categry_pro">
+					<h4 class="text-center">Smart Phones</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+
+				<div class="categry_pro">
+					<h4 class="text-center">Smart Watches</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+
+				<div class="categry_pro">
+					<h4 class="text-center">Laptops</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+				<div class="categry_pro">
+					<h4 class="text-center">Laptops</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+			</div>
+		
+			<div class="col-12 categry_two">
+				<div class="categry_pro">
+					<h4 class="text-center">Smart Phones</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+
+				<div class="categry_pro">
+					<h4 class="text-center">Smart Watches</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+
+				<div class="categry_pro">
+					<h4 class="text-center">Laptops</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+				<div class="categry_pro">
+					<h4 class="text-center">Laptops</h4>
+					<p class="text-center text-black-50">150 Products</p>
+				</div>
+		</div>
+
+	</div>
+	<div class="cl"></div>		
+</div>
+	
+				<!--Products Categories end-->
+	
+	
+	
+				<!--offers sec1 start-->
+	<div class="container-fluid offerbanner_sec">
+		<div class="container offerbanner_container">
+			
+			<div class="col-6 offerbanner_img">
+				<img src="images/Untitled-2.png" class="img-fluid" alt="laptop image">
+			</div>
+			
+			<div class="col-6 offerbanner_con">
+				<h1>DON'T MISS</h1>
+				<h2>UP TO 70%</h2>
+				<p>Best Gaming Laptop</p>
+				<button>Learn More</button>
+			</div>
+			
+		</div>
+		<div class="cl"></div>
+	</div>
+	
+				<!--offers sec1 end-->	
+	
+
+	
+				<!--Recommended Products-->	
+	
+	<div class="container-fluid rec_products">
+		<h2 class="text-center">Recommended Products</h2>
+		<div class="container rec_container">
+			<div class="row">							
+
+
+
+
+				<div class="col-3 rec_products_box" data-name="p-1">
+					<div class="img">
+						<img src="images/phones/iphone 16pro.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Iphone 16</h4>
+				</div>
+
+				<div class="col-3 rec_products_box" data-name="p-2">
+					<div class="img">
+						<img src="images/phones/iphone 16.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Iphone 16</h4>
+				</div>
+
+				<div class="col-3 rec_products_box" data-name="p-3">
+					<div class="img">
+						<img src="images/phones/Moto.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Moto</h4>
+				</div>
+				<div class="col-3 rec_products_box" data-name="p-4">
+					<div class="img">
+						<img src="images/phones/nothing 2a.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Nothing 2a</h4>
+				</div>
+				
+				<div class="col-3 rec_products_box" data-name="p-5">
+					<div class="img">
+						<img src="images/phones/realme GT 7pro.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Realme GT 7pro</h4>
+				</div>
+
+				<div class="col-3 rec_products_box" data-name="p-6">
+					<div class="img">
+						<img src="images/phones/vivo v50.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Vivo v50</h4>
+				</div>
+
+				<div class="col-3 rec_products_box" data-name="p-7">
+					<div class="img">
+						<img src="images/phones/samsung galaxy s23.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Samsung galaxy s23</h4>
+				</div>
+
+				<div class="col-3 rec_products_box" data-name="p-8">
+					<div class="img">
+						<img src="images/phones/samsung galaxy s24 ultra.png" class="img-fluid" alt="product image">
+					</div>
+					<h4 class="text-center">Samsung galaxy s24 ultra</h4>
+				</div>			
+			</div>
+		</div>
+
+
+			<div class="product-preview">
+
+					<div class="preview add" data-target="p-1">
+						<i class="fas fa-times close-icon"></i>
+						<img src="images/phones/iphone 16pro.png" class="img-fluid" alt="phone image">
+						<h3>Iphone 16pro</h3>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt" style="	color: gold"></i>
+							<span>(250)</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti officiis ut eum amet ipsum illo.
+							Corporis, quae. Quas numquam atque quod officia unde enim tempore, velit fugiat ut quia.</p>
+							<div class="price">₹999</div>
+							<div class="pre-btns">
+								<button onclick="msg()">Buy Now</button>
+								<button onclick="msg()">Cart</button>
+							</div>
+					</div>
+			</div>
+
+			
+	<div class="cl"></div>
+</div>
+	
+
+<script>
+	function msg(){
+		alert("Please Login or create a account");
+	}
+</script>
+
+
+
+
+
+
+
+
+				<!--offers sec2 start-->
+
+		<div class="container-fluid camere_offer_sec text-center">
+			<div class="row">
+				<h4>4K Ultra HD Smart <br>QLED TV</h4>
+				<p class="camere_offer_sec_txt">Quisque rhoncus orci vitae nisl rutrum rutrum lesuada laoreet urna seduj.</p>
+				<p class="p-0">Don't miss!<span class="text-green"> up to 70%</span></p>
+				<div class="col-12"><button>Learn More</button></div>		
+			</div>
+		</div>
+
+				<!--offers sec2 end-->
+
+	
+	
+	
+			<!--Our best services-->
+	<div class="container-fluid service_sec">
+		<h2 class="text-center">Our Best Services</h2>
+		<div class="container service_sec_con">
+			
+			<div class="service_box">
+				<!-- <img src="images/icon-24.png" alt="icon"> -->
+				 <i class="fa-solid fa-truck-fast service_box-icon"></i>
+				<h4>Free Shipping</h4>
+				<p>Mollis nec consequat at In feugiat molestie tortor a malesuada etiam a venenatis</p>
+			</div>
+			
+			<div class="service_box">
+				<!-- <img src="images/icon-24.png" alt="icon"> -->
+				 <i class="fa-solid fa-lock service_box-icon"></i>
+				<h4>Secure Payment</h4>
+				<p>Mollis nec consequat at In feugiat molestie tortor a malesuada etiam a venenatis</p>
+			</div>
+			
+			<div class="service_box">
+				<!-- <img src="images/icon-24.png" alt="icon"> -->
+				 <i class="fa-solid fa-handshake service_box-icon"></i>
+				<h4>Friendly Service</h4>
+				<p>Mollis nec consequat at In feugiat molestie tortor a malesuada etiam a venenatis</p>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+				<!--offers 2-->
+	<div class="container-fluid offerbanner_sec">
+		<div class="container offerbanner_container">
+						
+			<div class="col-6 offerbanner_img">
+				<img src="images/tv2.png" class="img-fluid" alt="laptop image">
+			</div>
+			
+			<div class="col-6 offerbanner_con">
+				<h1>DON'T MISS</h1>
+				<h2>UP TO 50%</h2>
+				<p>Best Gaming Laptop</p>
+				<button>View More</button>
+			</div>
+			
+		</div>
+		<div class="cl"></div>
+	</div>
+	
+	
+				<!--Products-->
+	<div class="container-fluid Products_sec">
+		
+		<div class="container">
+					
+			<div class="row products_nav">
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_phone" onClick="commonFunction('phone','nav_bg_phone');">Phone</div>
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_laptop" onClick="commonFunction('laptop','nav_bg_laptop');">Laptop</div>
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_tv" onClick="commonFunction('tv','nav_bg_tv');">Tv</div>
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_watch" onClick="commonFunction('watch','nav_bg_watch');">Watch</div>
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_headphone" onClick="commonFunction('headphone','nav_bg_headphone');">Headphone</div>
+				<div class="col-lg-1 col-md-2 mb-3 pro_nav" id="nav_bg_camera" onClick="commonFunction('camera','nav_bg_camera');">Camera</div>
+			</div>
+
+				<div id="phone">
+						
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/iphone 16.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/iphone 16pro.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/Moto.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Moto</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/nothing 2a.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Nothing 2a</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/oneplus 11.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Oneplus 11</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/oppo reno 12pro.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Oppo Reno 12pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/pixel 9a.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Pixel 9a</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/poco m4 pro.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Poco m4 pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/realme 14pro.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Realme 14 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/phones/realme GT 7pro.png" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Realme GT 7pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+				</div>
+
+				<div id="laptop">
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/upload_images/kompjuteri-com-uYDXcEv8Cs4-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/laptop.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/laptop.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/laptop.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/upload_images/kompjuteri-com-uYDXcEv8Cs4-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+				</div>
+			
+				<div id="tv">
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/tv.jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/tv.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/tv.jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/tv.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/tv.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+				</div>
+			
+				<div id="watch">
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/product-122.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/product-122.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/product-122.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/product-122.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/product-122.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+				</div>
+			
+				<div id="headphone">
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/download (4).jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/download (4).jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/download (4).jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/download (4).jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/download (4).jpeg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+				</div>
+			
+				<div id="camera">
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/dimitri-karastelev-o7paS8JK_Zk-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/dimitri-karastelev-o7paS8JK_Zk-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/dimitri-karastelev-o7paS8JK_Zk-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/dimitri-karastelev-o7paS8JK_Zk-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+					<div class="col-2 product_box">
+						<div class="pro_img">
+							<img src="images/dimitri-karastelev-o7paS8JK_Zk-unsplash.jpg" class="img-fluid" alt="...">
+						</div>	
+						<div class="pro_con">
+							<h4>Iphone 16 Pro</h4>
+							<button>View Detailes<span><i class="fa-solid fa-arrow-right"></i></span></button>
+						</div>	
+						<h4></h4>
+					</div>
+
+				</div>
+					
+		</div>
+		<div class="cl"></div>
+	</div>
+
+
+	
+
+    
+	
+		<!--	Footer-->
+<div class="container-fluid footer">
+	<div class="container footer_container">
+		
+		<div class="col-12 col-md-6 col-lg-3 footer_con1">
+			<h5>Digital World</h5>
+			<p>Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere orci dapibus auctor</p>
+			<div class="fooer_icons d-flex gap-lg-5 gap-md-3 mt-4">
+				<div class="f_icon"><i class="fa-brands fa-facebook-f"></i></div>
+				<div class="f_icon"><i class="fa-brands fa-twitter"></i></div>
+				<div class="f_icon"><i class="fa-brands fa-instagram"></i></div>
+			</div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con2">
+			<h5>Quick Links</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_home.php">Home</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">About</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_product_page.php">Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Contact</a></div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con3">
+			<h5>Shop Now</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Collections</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Featured Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Trending Products</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">New Arrivals Products</a></div>
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con4">
+			<h5>Get Help</h5>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">FAQ</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Shipping</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Return</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Order Status</a></div>
+			<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Payment Options</a></div>
+		</div>
+		
+		<div class="col-12 col-md-12 col-lg-3  text-md-center text-sm-start footer_con5">
+			<h5>Contact Us</h5>
+			<button>Get In Touch<span><i class="fa-solid fa-arrow-right"></i></span></button>
+		</div>
+		
+	<div class="cl"></div>		
+	</div>
+
+</div>	
+
+	
+<!--<script src="js/fontawesome.js"></script>	-->
+<script src="js/fontawesome.min.js"></script>
+<script src="js/all.min.js"></script>
+
+	<!-- bootstrap js -->
+<script src="bootstrap/js/bootstrap.js"></script>
+
+	<!-- slick slider js -->
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

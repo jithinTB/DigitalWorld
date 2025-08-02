@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital World</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!--<link href="css/fontawesome.css" rel="stylesheet" type="text/css">	-->
+<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">	
+<link href="css/all.min.css" rel="stylesheet" type="text/css">	
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body>
+	
+	<div class="container-fluid l_form_main">
+		<div class="container l_form_container">
+			
+			<div class="l_form">
+				
+				<div class="col-lg-6 col-md-12 col-12 l_form_con">
+					<h2 class="text-center">Welcome again</h2>
+					<p class="text-center subHead">Don't have an account?<a class="text-decoration-none ms-1" style="color: darkseagreen" href="registration.html">Sign up</a></p>
+					<form action="#" method="post">
+						<label class="login_lable">Email</label><br>
+						<input type="email" id="l_email" name="l_email" onKeyUp="removeValidation('l_email',1);"><br>
+
+
+
+						<label>Password</label><!--<a class="forgot_pass" href="#">Forgot password?</a> --><br>
+					<div class="col-12 p-0 d-flex align-items-baseline" style="border-bottom:1px solid darkseagreen;margin-bottom:20px;">
+
+						<div class="col-11 p-0">
+						<input type="password" id="l_password" name="l_password" onKeyUp="removeValidation('l_password',1);">
+						</div>
+						<div class="col-1 p-0">
+						<span id="loginShowPasswordIcon" class="loginShowPasswordIcon"><i class="fa-solid fa-eye"></i></span>
+						<span id="loginHidePasswordIcon" class="loginHidePasswordIcon"><i class="fa-solid fa-eye-slash"></i></span>
+						</div>
+					</div>
+
+
+
+
+
+
+						<input type="checkbox" id="l_checkbox"><span class="ms-1">Remember me</span>
+						<center><input type="submit" id="l_btn" name="l_btn" value="Sign In" onClick="return loginValidation();"></center>
+						<p class="text-center py-4 m-0">or sign in with</p>
+						<div class="l_form_icons">
+							<div class="l_form_i1"><a href="#"><i class="fa-brands fa-google" style="color: darkseagreen"></i></a></div>
+							<div class="l_form_i2"><a href="#"><i class="fa-brands fa-facebook-f" style="color: darkseagreen"></i></a></div>
+							<div class="l_form_i3"><a href="#"><i class="fa-brands fa-twitter" style="color: darkseagreen"></i></a></div>
+						</div>
+					</form>
+				</div>
+				
+				<div class="col-lg-6 col-md-12 col-12 d-none d-lg-block">
+					<div class="l_form_img">
+						<img src="images/signin.png" class="img-fluid" alt="image">
+					</div>	
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>			
+
+<script>
+
+	//password hide and show
+
+document.addEventListener('DOMContentLoaded', () => {
+		const passwordField = document.getElementById('l_password');
+		// alert(passwordField);
+		const loginShowPasswordIcon = document.getElementById('loginShowPasswordIcon');
+		const loginHidePasswordIcon = document.getElementById('loginHidePasswordIcon');
+
+		loginShowPasswordIcon.style.display = 'none';
+		loginHidePasswordIcon.style.display = 'none';
+
+		passwordField.addEventListener('input', () => {
+			if (passwordField.value.length > 0) {
+				loginShowPasswordIcon.style.display = 'block';
+			} else {
+				loginShowPasswordIcon.style.display = 'none';
+			}
+		});
+
+		// loginShowPasswordIcon.addEventListener('click', () => {
+		// 	if (passwordField.type === 'password') {
+		// 		passwordField.type = 'text';
+		// 		// passwordIcon.textContent = '🙈'; // Closed eye
+		// 		loginHidePasswordIcon.style.display = 'block';
+		// 		loginShowPasswordIcon.style.display = 'none';
+		// 	}
+		// });
+
+		// loginHidePasswordIcon.addEventListener('click', () =>{
+		// 	// alert('fgf');
+		// 	if(passwordField.type === 'text'){
+		// 		passwordField.type = 'password';
+		// 		loginHidePasswordIcon.style.display = 'none';
+		// 		loginShowPasswordIcon.style.display = 'block';
+		// 	}
+		// });	
+		loginShowPasswordIcon.addEventListener('click', () => {
+			showAndHide(passwordField, loginHidePasswordIcon, loginShowPasswordIcon);
+		});
+
+		loginHidePasswordIcon.addEventListener('click', () =>{
+			showAndHide(passwordField, loginHidePasswordIcon, loginShowPasswordIcon);
+
+		});	
+
+		
+	});
+
+</script>
+	
+<!--<script src="js/fontawesome.js"></script>	-->
+<script src="js/fontawesome.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/script.js"></script>		
+</body>
+</html>
