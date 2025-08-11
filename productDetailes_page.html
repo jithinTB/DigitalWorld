@@ -100,8 +100,8 @@
 							class="fa-solid fa-store"></i></a>
 				</div>
 				<div class="menu_link">
-					<a class="text-decoration-none menuText" href="contact.htl">Contact</a>
-					<a class="text-decoration-none menuIcon" href="contact.htl"><i class="fa-solid fa-phone"></i></a>
+					<a class="text-decoration-none menuText" href="contact_page.html">Contact</a>
+					<a class="text-decoration-none menuIcon" href="contact_page.html"><i class="fa-solid fa-phone"></i></a>
 				</div>
 
 			</div>
@@ -118,7 +118,7 @@
 			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">About</a></div>
 			<div class="responsive_menu_link"><a class="text-decoration-none" href="product_page.html">Products</a>
 			</div>
-			<div class="responsive_menu_link"><a class="text-decoration-none" href="#">Contact</a></div>
+			<div class="responsive_menu_link"><a class="text-decoration-none" href="contact_page.html">Contact</a></div>
 			<div class="responsive_menu_link_search">
 				<form>
 					<input type="text" id="responsive_search" placeholder="Search Your Products">
@@ -143,8 +143,8 @@
 
 					<div class="col-5 productDetailes_img">
 
-						<div class="col-12 text-center">
-							<img src="images/upload_images/vivo/vivo-showImage.png" class="img-fluid" id="product_mainImg"
+						<div class="col-12 text-center proMain-img">
+							<img src="images/phones/vivo/vivo-showImage.png" class="img-fluid" id="product_mainImg"
 								alt="product image">
 						</div>
 
@@ -152,25 +152,27 @@
 
 							<div class="proSub_img">
 								<div class="proSub_img2">
-									<img src="images/upload_images/vivo/vivo-frontView.png" class="img-fluid" alt="product sub image"
-										onclick="imgClick('vivo-frontView.png')">
+									<img src="images/phones/vivo/vivo-frontView.png" class="img-fluid"
+										alt="product sub image" onclick="imgClick('vivo-frontView.png')">
 								</div>
 							</div>
+
 							<div class="proSub_img">
 								<div class="proSub_img2">
-									<img src="images/upload_images/vivo/vivo-sideView.png" class="img-fluid"
+									<img src="images/phones/vivo/vivo-sideView.png" class="img-fluid"
 										alt="product sub image" onclick="imgClick('vivo-sideView.png')">
 								</div>
 							</div>
+							
 							<div class="proSub_img">
 								<div class="proSub_img2">
-									<img src="images/upload_images/vivo/vivo-backView.png" class="img-fluid"
+									<img src="images/phones/vivo/vivo-backView.png" class="img-fluid"
 										alt="product sub image" onclick="imgClick('vivo-backView.png')">
 								</div>
 							</div>
 							<div class="proSub_img">
 								<div class="proSub_img2">
-									<img src="images/upload_images/vivo/vivo-backFront.png" class="img-fluid"
+									<img src="images/phones/vivo/vivo-backFront.png" class="img-fluid"
 										alt="product sub image" onclick="imgClick('vivo-backFront.png')">
 								</div>
 							</div>
@@ -189,27 +191,29 @@
 							4.5
 							<span class="review">( 124 Reviews )</span>
 						</div>
+
 						<div class="productDetailes_pro-price">
-							<span id="price">₹38,000</span>
-							<h3 id="off_price">₹32,000</h3>
+							<span id="price">₹32,000</span>
+							<h3 id="off_price">₹28,000</h3>
 						</div>
+
 						<p class="text-danger">Hurry up! Only 4 items left</p>
 
 						<div class="phone_clr">
-							<div class="phn_clr1" onclick="imgClick('vivooo.png')">
-								<img src="images/phones/vivo/vivo-blue.png" alt="product image" class="img-fluid">
+							<div class="phn_clr1" onclick="imgClick('vivo-green.png')">
+								<img src="images/phones/vivo/vivo-green.png" alt="product image" class="img-fluid">
 							</div>
-							<div class="phn_clr2" onclick="imgClick('vivo-gray.jpg')">
-								<img src="images/phones/vivo/vivo-gray.jpg" alt="product image" class="img-fluid">
+							<div class="phn_clr2" onclick="imgClick('vivo-gray.png')">
+								<img src="images/phones/vivo/vivo-gray.png" alt="product image" class="img-fluid">
 							</div>
 						</div>
 
 						<div class="phone_ram">
-							<div class="ram_box" id="ram_box1">
-								<p onclick="txtChange(1)">8GB</p>
+							<div class="ram_box" id="ram_box1" onclick="txtChange(1)">
+								<p>8GB</p>
 							</div>
-							<div class="ram_box" id="ram_box2">
-								<p onclick="txtChange(2)">12GB</p>
+							<div class="ram_box" id="ram_box2" onclick="txtChange(2)">
+								<p>12GB</p>
 							</div>
 						</div>
 
@@ -232,23 +236,29 @@
 
 	<script>
 		function imgClick(subImg) {
-			document.getElementById("product_mainImg").src = 'images/upload_images/vivo/' + subImg;
+			document.getElementById("product_mainImg").src = 'images/phones/vivo/' + subImg;
 		}
 		function txtChange(ram) {
 			let ram_box1 = document.getElementById('ram_box1');
 			let ram_box2 = document.getElementById('ram_box2');
+			let price = document.getElementById("price");
+			let off_price = document.getElementById("off_price");
 
-			if (ram == 1) {
-				document.getElementById("price").textContent = "₹32,000";
-				ram_box1.style.border = "2px solid Black";
-				ram_box2.style.border = "1px solid gray";
+			// Reset selection
+			ram_box1.classList.remove("selected");
+			// ram_box2.classList.remove("selected");
+
+			if (ram === 1) {
+				price.textContent = "₹32,000";
+				off_price.textContent = "₹28,000";
+				ram_box1.classList.add("selected");
 			} else {
-				document.getElementById("price").textContent = "₹38,000";
-				ram_box2.style.border = "2px solid Black";
-				ram_box1.style.border = "1px solid gray";
-
+				price.textContent = "₹38,000";
+				off_price.textContent = "₹34,000";
+				ram_box2.classList.add("selected");
 			}
 		}
+
 	</script>
 
 
@@ -486,9 +496,9 @@
 				<h5>Quick Links</h5>
 				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_home.php">Home</a></div>
 				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">About</a></div>
-				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index_product_page.php">Products</a>
+				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="product_page.html">Products</a>
 				</div>
-				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Contact</a></div>
+				<div class="col-12 p-0 my-2"><a class="text-decoration-none" href="contact_page.html">Contact</a></div>
 			</div>
 
 			<div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con3">
