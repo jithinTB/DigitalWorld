@@ -447,16 +447,16 @@ previewBox.forEach(closeBtnParent => {
 // 	// });
 
 
-function showAndHide(passwordField, loginHidePasswordIcon, loginShowPasswordIcon){
-			if (passwordField.type === 'password') {
-				passwordField.type = 'text';
-				loginHidePasswordIcon.style.display = 'block';
-				loginShowPasswordIcon.style.display = 'none';
-			}
-			else if(passwordField.type === 'text'){
-				passwordField.type = 'password';
-				loginHidePasswordIcon.style.display = 'none';
-				loginShowPasswordIcon.style.display = 'block';
-			}
-		}
+function showAndHide(passwordField, loginHidePasswordIcon, loginShowPasswordIcon) {
+	if (passwordField.type === 'password') {
+		passwordField.type = 'text';
+		loginHidePasswordIcon.style.display = 'block';
+		loginShowPasswordIcon.style.display = 'none';
+	}
+	else if (passwordField.type === 'text') {
+		passwordField.type = 'password';
+		loginHidePasswordIcon.style.display = 'none';
+		loginShowPasswordIcon.style.display = 'block';
+	}
+}
 

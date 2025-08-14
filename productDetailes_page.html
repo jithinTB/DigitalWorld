@@ -71,8 +71,9 @@
 
 			<div class="col-3">
 				<div class="categry_section">
-					<div class="select_categry">All categaries<span class="float-end"><i
-								class="fa-solid fa-angle-down"></i></span></div>
+					<div class="select_categry">
+						All categaries<span class="float-end">
+							<i class="fa-solid fa-angle-down"></i></span></div>
 					<div class="categry_items">
 						<div>Phone</div>
 						<div>Laptop</div>
@@ -244,9 +245,7 @@
 			let price = document.getElementById("price");
 			let off_price = document.getElementById("off_price");
 
-			// Reset selection
 			ram_box1.classList.remove("selected");
-			// ram_box2.classList.remove("selected");
 
 			if (ram === 1) {
 				price.textContent = "₹32,000";
@@ -279,7 +278,7 @@
 
 				<div class="col-3 d-flex flex-column align-items-center des_nav2" id="displayDiv"
 					onclick="showDescription('display_des','description_head_display','displayDiv')">
-					<p class="m-0" id="description_head_display">Diplay</p>
+					<p class="m-0" id="description_head_display">Display</p>
 				</div>
 
 				<div class="col-3 d-flex flex-column align-items-center des_nav2" id="batteryDiv"
@@ -293,6 +292,73 @@
 				</div>
 				<div class="cl"></div>
 			</div>
+
+
+
+
+			<!-- ProductDescription dropDown start -->
+
+			<div class="col-12 p-0">
+				<div class="responsive_productDescription">
+					<div class="responsive_productDescription-selection">Camera
+						<span class="float-end"><i class="fa-solid fa-angle-down"></i></span>
+					</div>
+					<div class="responsive_productDescription-items">
+						<div class="text-center" id="camera"
+							onclick="showDescription('camera_des','description_head_camera','cameraDiv')">Camera</div>
+						<div class="text-center"
+							onclick="showDescription('display_des','description_head_display','displayDiv')">Display
+						</div>
+						<div class="text-center"
+							onclick="showDescription('battery_des','description_head_battery','batteryDiv')">Battery
+						</div>
+						<div class="text-center"
+							onclick="showDescription('processor_des','description_head_processor','processorDiv')">
+							Proccessor</div>
+					</div>
+				</div>
+			</div>
+
+
+			<script>
+				const selected = document.querySelector('.responsive_productDescription-selection');
+				const options = document.querySelector('.responsive_productDescription-items');
+				const camera = document.getElementById('camera');
+
+				selected.addEventListener("click", () => {
+
+					if (selected.textContent === "Camera") {
+						camera.style.display = "none";
+					}else{
+						camera.style.display = "block";
+					}
+					
+					options.style.display = options.style.display === "block" ? "none" : "block";
+					
+
+				});
+
+				options.addEventListener("click", (e) => {
+					if (e.target.tagName === "DIV") {
+						selected.textContent = e.target.textContent;
+						options.style.display = "none";
+					}
+				});
+
+				document.addEventListener("click", (e) => {
+					if (!e.target.closest(".responsive_productDescription")) {
+						options.style.display = "none";
+					}
+				});
+
+
+
+			</script>
+
+
+
+			<!-- ProductDescription dropDown end -->
+
 
 			<div class="col-12 mb-0" id="camera_des">
 				<p>it is a long established fact that a reader will be distracted by the readable content of a page
@@ -374,11 +440,6 @@
 					elementum nec, ornare nec ante. Sed vel massa consectetur, pharetra lacus ut, sollicitudin
 					metus. Ut nec dignissim mi, eget auctor nibh. Donec eu sem id libero venenatis blandit. Donec a
 					scelerisque quam, a pellentesque magna. Vestibulum sed dictum purus.
-
-
-
-
-
 				</p>
 			</div>
 
@@ -407,11 +468,11 @@
 					remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
 					sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
 					Aldus PageMaker including versions of Lorem Ipsum.
-
 				</p>
 			</div>
 
 		</div>
+		<div class="cl"></div>
 	</div>
 
 	<!--Product Description end-->

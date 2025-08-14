@@ -275,10 +275,10 @@
 	position: relative;
 	display: inline-block;
 	width: 200px;
+	border: 1px solid #fff;
 }
 
 .select_categry {
-	border: 1px solid #fff;
 	color: #fff;
 	padding: 10px 15px;
 	cursor: pointer;
@@ -305,10 +305,6 @@
 	background-color: darkseagreen;
 	color: white;
 }
-
-/* .categry_items div:hover {
-	background-color: #f1f1f1;
-} */
 
 /* dropDown end*/
 
@@ -1577,27 +1573,6 @@
 	transition: background 0s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .productDetailesPage-menubar3 {
 	position: sticky;
 	top: 0;
@@ -1652,20 +1627,16 @@
 }
 
 .des_nav {
-	/* border-top: 2px solid #cdcdcd;
-	border-left: 2px solid #cdcdcd;
-	border-right: 2px solid #cdcdcd; */
 	background-color: whitesmoke;
 	cursor: pointer;
 }
 
 .des_nav2 {
-	/* border-bottom: 2px solid #cdcdcd; */
-	/* background-color: whitesmoke; */
 	cursor: pointer;
+}
 
-
-
+.responsive_productDescription {
+	display: none;
 }
 
 
@@ -3197,6 +3168,77 @@ tfoot td {
 	.productDetailes_pro-price span {
 		font-size: 1.5rem;
 	}
+
+	.responsive_productDescription {
+		display: block;
+	}
+
+	.description_head {
+		display: none;
+	}
+
+
+
+
+
+	/* ProductDescription dropDown start*/
+
+	.responsive_productDescription {
+		width: 100%;
+		border: 1px solid #fff;
+		color: #000;
+		/* padding: 10px 15px; */
+		cursor: pointer;
+	}
+
+	.responsive_productDescription-selection{
+		padding: 10px 173px;
+				border: 1px solid #000;
+
+	}
+
+	.responsive_productDescription-items {
+		display: none;
+		z-index: 99;
+		width: 100%;
+		/* margin-top: 5px; */
+		background-color: darkseagreen;
+	}
+
+	.responsive_productDescription-items div {
+		padding: 10px;
+		/* margin-bottom: 5px; */
+		cursor: pointer;
+	}
+
+	.responsive_productDescription-items div:hover {
+		background-color: darkseagreen;
+		color: white;
+	}
+
+	/* ProductDescription dropDown end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/* Product detailes page end */
 
