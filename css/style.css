@@ -2257,6 +2257,61 @@ tfoot td {
 	box-shadow: 15px 15px rgba(0, 0, 0, 0.19);
 }
 
+.contactInfo_sec {
+	margin: 100px 0;
+}
+
+.contactInfo_box {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px 0px #dddcdc;
+	width: 280px;
+	height: 185px;
+	padding: 25px 20px;
+}
+
+.contactInfo_box-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.contactInfo_box-con {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.contactInfo_box-con .icon {
+	font-size: 24px;
+	/* color: black; */
+}
+
+.contactInfo_box-con .location-txt .heading {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.contactInfo_box-con .location-txt .sub_heading {
+	color: darkseagreen;
+}
+
+/* .contactInfo_head .sub_head{
+	background-color: darkseagreen;
+} */
+
+.contactInfo_head .main_head {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.contactInfo_head .para {
+	padding: 20px 200px;
+	line-height: 32px;
+}
+
+
 /* Contact end*/
 
 
@@ -3191,9 +3246,9 @@ tfoot td {
 		cursor: pointer;
 	}
 
-	.responsive_productDescription-selection{
+	.responsive_productDescription-selection {
 		padding: 10px 173px;
-				border: 1px solid #000;
+		border: 1px solid #000;
 
 	}
 
@@ -3217,24 +3272,6 @@ tfoot td {
 	}
 
 	/* ProductDescription dropDown end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
