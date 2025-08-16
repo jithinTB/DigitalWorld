@@ -2297,19 +2297,143 @@ tfoot td {
 	color: darkseagreen;
 }
 
-/* .contactInfo_head .sub_head{
-	background-color: darkseagreen;
-} */
+.contactInfo_head .sub_head{
+	color: #4b4b4b;
+	font-weight: 500;
+}
 
 .contactInfo_head .main_head {
 	font-size: 3rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .contactInfo_head .para {
-	padding: 20px 200px;
+	padding: 20px 290px;
 	line-height: 32px;
+	color: #4b4b4b;
 }
+
+/* form start*/
+
+.contactForm_sec {
+	background-color: #fff;
+	margin-top: 100px;
+}
+
+.contactForm_container {
+	padding-top: 100px;
+}
+
+.contactForm_row .img_sec {
+	padding: 0;
+}
+
+#name,
+#email,
+#phone {
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid darkseagreen;
+	padding-left: 15px;
+	border-radius: 5px;
+}
+
+#msg {
+	width: 100%;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid darkseagreen;
+	padding:15px;
+	border-radius: 5px;
+}
+
+/* .from_sec .form_btn{
+	width: 100%;
+	height: 45px;
+	background-color: darkseagreen;
+	color: #fff;
+	border: none;	
+	border-radius: 5px;
+
+} */
+
+.from_sec .form_btn {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.from_sec .form_btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 2px solid darkseagreen;
+}
+
+.from_sec .form_btn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.from_sec .form_btn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.from_sec .form_btn:hover {
+  color: white;
+}
+
+.from_sec .form_btn:active span::before {
+  background: #2751cd;
+}
+
+
+
+.from_sec .sub_head{
+	color: #4b4b4b;
+	font-weight: 500;
+}
+
+.from_sec .main_head {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 56px;
+}
+
+.contactMap_sec{
+	background-color: white;
+	padding: 100px 0;
+}
+
+
+/* form end*/
+
 
 
 /* Contact end*/
