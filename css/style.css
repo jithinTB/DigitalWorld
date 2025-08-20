@@ -684,7 +684,7 @@
 	width: 15rem;
 }
 
-.product-preview .preview .close-icon {
+.close-icon {
 	position: absolute;
 	top: 1rem;
 	right: 1.5rem;
@@ -694,7 +694,7 @@
 	transition: transform 0.3s ease-out;
 }
 
-.product-preview .preview .close-icon:hover {
+.close-icon:hover {
 	transform: rotate(90deg);
 	/* color: red; */
 }
@@ -2339,7 +2339,7 @@ tfoot td {
 	transition: 0.5s all ease;
 }
 
-.formDiv textarea{
+.formDiv textarea {
 	width: 100%;
 	background-color: transparent;
 	outline: none;
@@ -2430,16 +2430,20 @@ tfoot td {
 	transition: 0.5s all ease;
 }
 
-.formDiv input:valid~label,textarea:valid~label,
-.formDiv input:focus~label,textarea:focus~label {
+.formDiv input:valid~label,
+textarea:valid~label,
+.formDiv input:focus~label,
+textarea:focus~label {
 	color: darkseagreen;
 	transform: translateX(10px) translateY(-25px);
 	font-size: 14px;
 	letter-spacing: 2px;
 }
 
-.formDiv input:valid,textarea:valid,
-.formDiv input:focus,textarea:focus{
+.formDiv input:valid,
+textarea:valid,
+.formDiv input:focus,
+textarea:focus {
 	border: 1px solid darkseagreen;
 }
 
@@ -2487,6 +2491,11 @@ tfoot td {
 	right: 20px;
 	font-size: 30px;
 	cursor: pointer;
+}
+
+.close-btn:hover {
+	transform: rotate(180deg);
+	/* color: red; */
 }
 
 .popup_head {
@@ -2571,6 +2580,86 @@ tfoot td {
 }
 
 /* form end*/
+
+/* Subscribe From start */
+
+.subscribeFrom_sec {
+	padding: 50px;
+	background-color: whitesmoke;
+	position: relative;
+
+}
+
+.subscribefromSec_row {
+	display: flex;
+	justify-content: center;
+}
+
+#contactPage_subscribeForm {
+	width: 98%;
+	height: 2.8rem;
+	outline: navy;
+	background-color: transparent;
+	border: 1px solid darkseagreen;
+	padding-left: 15px;
+
+}
+
+.contactPage_subscribeFormBtn {
+	background: darkseagreen;
+	color: white;
+	font-family: inherit;
+	padding: 0.35em;
+	padding-left: 1em;
+	font-size: 17px;
+	font-weight: 500;
+	/* border-radius: 0.4em; */
+	border: none;
+	letter-spacing: 0.05em;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0 0 1.6em -0.6em darkseagreen;
+	overflow: hidden;
+	position: relative;
+	height: 2.8rem;
+	padding-right: 3.3em;
+	cursor: pointer;
+}
+
+.contactPage_subscribeFormBtn .arrowIcon {
+	background: white;
+	margin-left: 1em;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2em;
+	width: 2.5em;
+	border-radius: 0.2em;
+	box-shadow: 0.1em 0.1em 0.6em 0.2em darkseagreen;
+	right: 0.3em;
+	transition: all 0.3s;
+}
+
+.contactPage_subscribeFormBtn:hover .arrowIcon {
+	width: calc(100% - 0.6em);
+}
+
+.contactPage_subscribeFormBtn .arrowIcon svg {
+	width: 1.1em;
+	transition: transform 0.3s;
+	color: darkseagreen;
+}
+
+.contactPage_subscribeFormBtn:hover .arrowIcon svg {
+	transform: translateX(0.1em);
+}
+
+.contactPage_subscribeFormBtn:active .arrowIcon {
+	transform: scale(0.95);
+}
+
+/* Subscribe From end */
 
 
 
