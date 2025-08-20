@@ -2310,7 +2310,7 @@ tfoot td {
 .contactInfo_head .para {
 	padding: 20px 290px;
 	line-height: 32px;
-	color: #4b4b4b;
+	color: #6d6d6d;
 }
 
 /* form start*/
@@ -2328,26 +2328,26 @@ tfoot td {
 	padding: 0;
 }
 
-#name,
-#email,
-#phone,
-#subject {
+.formDiv input {
 	width: 100%;
 	height: 40px;
 	background-color: transparent;
 	outline: none;
-	border: 1px solid darkseagreen;
+	border: 1px solid gray;
 	padding-left: 15px;
 	border-radius: 5px;
+	transition: 0.5s all ease;
 }
 
-#msg {
+.formDiv textarea{
 	width: 100%;
 	background-color: transparent;
 	outline: none;
-	border: 1px solid darkseagreen;
+	border: 1px solid gray;
 	padding: 15px;
 	border-radius: 5px;
+	transition: 0.5s all ease;
+
 }
 
 .conForm_Btn {
@@ -2415,36 +2415,35 @@ tfoot td {
 	line-height: 56px;
 }
 
-.form {
+.formDiv {
 	position: relative;
 }
 
 .formLable {
 	position: absolute;
-	left: 25px;
 	top: 25px;
-	background-color: #ff0000;
-	padding: 0px 5px;
-	transition: transform 0.3s ease, color 0.3s ease;
-	color: black;
-	z-index: 1000;
+	left: 25px;
+	background-color: #fff;
+	color: #000;
+	padding: 0 10px;
+	pointer-events: none;
+	transition: 0.5s all ease;
 }
 
-input:focus,
-input:valid {
-	color: red;
-	border: 3px solid yellow;
+.formDiv input:valid~label,textarea:valid~label,
+.formDiv input:focus~label,textarea:focus~label {
+	color: darkseagreen;
+	transform: translateX(10px) translateY(-25px);
+	font-size: 14px;
+	letter-spacing: 2px;
 }
 
-input:focus+.formLable,
-input:valid+.formLable {
-	color: red;
-	height: 30px;
-	line-height: 30px;
-	transform: translate(-15px,-16px)scale(0.88);
-	z-index: 1111;
-	padding: 0 12px;
+.formDiv input:valid,textarea:valid,
+.formDiv input:focus,textarea:focus{
+	border: 1px solid darkseagreen;
 }
+
+
 
 /* form end*/
 
@@ -2453,9 +2452,6 @@ input:valid+.formLable {
 	background-color: white;
 	padding: 100px 0;
 }
-
-
-
 
 
 /*  popup msg */
@@ -2505,7 +2501,6 @@ input:valid+.formLable {
 	font-size: 1rem;
 	margin: 1rem 0;
 	line-height: 30px;
-
 }
 
 #subscribe_form {
@@ -2514,7 +2509,6 @@ input:valid+.formLable {
 	border: 2px solid darkseagreen;
 	padding-left: 15px;
 	outline: none;
-
 }
 
 /*  popup msg */
@@ -2575,26 +2569,6 @@ input:valid+.formLable {
 #subscribe_btn:active .arrowIcon {
 	transform: scale(0.95);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* form end*/
 
@@ -2850,6 +2824,25 @@ input:valid+.formLable {
 	.cart_summary h3 {
 		font-size: 22px;
 	}
+
+
+	/* Contact Page start*/
+	.contactInfo_head .para {
+		padding: 0px 120px;
+	}
+
+	.contactInfo_box-row {
+		flex-wrap: wrap;
+		gap: 34px;
+	}
+
+	.contactInfo_box {
+		width: 450px;
+	}
+
+
+
+	/* Contact Page end*/
 
 
 }

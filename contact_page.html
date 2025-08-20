@@ -99,8 +99,8 @@
                             class="fa-solid fa-store"></i></a>
                 </div>
                 <div class="menu_link">
-                    <a class="text-decoration-none menuText" href="contact.htl">Contact</a>
-                    <a class="text-decoration-none menuIcon" href="contact.htl"><i class="fa-solid fa-phone"></i></a>
+                    <a class="text-decoration-none menuText" href="contact_page.html">Contact</a>
+                    <a class="text-decoration-none menuIcon" href="contact_page.html"><i class="fa-solid fa-phone"></i></a>
                 </div>
 
             </div>
@@ -139,7 +139,7 @@
 
                 <div class="banner_scroll">
                     <div class="col-7 banner_con">
-                        <p class="fw-light sub_head">BEST PRICE</p>
+                        <!-- <p class="fw-light sub_head">BEST PRICE</p> -->
                         <h1>Contact<br><span class="banner_spantxt">US</span></h1>
                         <hr>
                         <p class="banner_para">Fusce semper rhoncus dignissim Curabitur dapibus convallis varius
@@ -306,27 +306,35 @@
                         <br>With Us!
                     </h1>
                     <form class="form">
-                        <div class="col-6">
+
+
+
+                        <div class="col-6 formDiv">
+                            <input type="text" id="name" class="inputField" required>
                             <label class="formLable">Name</label>
-                            <input type="text" id="name" required>
                         </div>
-                        <div class="col-6">
-                            <label>Email</label>
-                            <input type="email" id="email" required>
+
+                        <div class="col-6 formDiv">
+                            <input type="email" id="email" class="inputField" required>
+                            <label class="formLable">Email</label>
                         </div>
-                        <div class="col-6">
-                            <label>Phone</label>
-                            <input type="text" id="phone" required>
+
+                        <div class="col-6 formDiv">
+                            <input type="text" id="phone" class="inputField" required>
+                            <label class="formLable">Phone</label>
                         </div>
-                        <div class="col-6">
-                            <label>Subject</label>
-                            <input type="text" id="subject" required>
+
+                        <div class="col-6 formDiv">
+                            <input type="text" id="subject" class="inputField" required>
+                            <label class="formLable">Subject</label>
                         </div>
-                        <div class="col-12">
-                            <label>Message</label>
-                            <textarea id="msg" rows="5" required></textarea>
+
+                        <div class="col-12 formDiv">
+                            <textarea id="msg" rows="5" class="inputField" required></textarea>
+                            <label class="formLable">Message</label>
                         </div>
-                        <div class="col-12">
+
+                        <div class="col-12 formDiv">
                             <button class="conForm_Btn">Send Message
                                 <div class="arrowIcon">
                                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -338,6 +346,7 @@
                                 </div>
                             </button>
                         </div>
+
                     </form>
                 </div>
             </div>
