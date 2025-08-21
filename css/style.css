@@ -400,6 +400,7 @@
 	color: #393939;
 	font-weight: 400;
 	padding: 0 100px 0 0;
+	line-height: 30px;
 }
 
 .banner_btn1,
@@ -2929,10 +2930,41 @@ textarea:focus {
 		width: 450px;
 	}
 
+	.contactForm_row .img_sec {
+		width: 40%;
+	}
 
+	.contactForm_row .from_sec {
+		width: 60%;
+	}
+
+
+	.contactForm_row .img_sec img {
+		padding-top: 160px;
+	}
+
+	.subscribefromBtndiv {
+		width: 21% !important;
+	}
+
+	.subscribefromInputdiv {
+		width: 40% !important;
+	}
+
+	.contactPage_subscribeFormBtn {
+		letter-spacing: 0.03em;
+	}
+
+	.from_sec .main_head {
+		font-size: 2.5rem;
+		line-height: 50px;
+	}
+
+	.from_sec .sub_head {
+		margin-bottom: 0.5rem;
+	}
 
 	/* Contact Page end*/
-
 
 }
 
@@ -3323,6 +3355,55 @@ textarea:focus {
 	.banner_btn2 {
 		margin-left: 15px;
 	}
+
+	/* Contact Page start*/
+
+	.contactInfo_box {
+		width: 330px;
+	}
+
+	.contactInfo_head .main_head {
+		font-size: 2.5rem;
+	}
+
+	.contactInfo_head .sub_head {
+		margin-bottom: 0.5rem;
+	}
+
+	.contactForm_row .img_sec {
+		display: none;
+	}
+
+	.contactForm_row .from_sec {
+		width: 100%;
+	}
+
+	.contactForm_container {
+		padding-top: 50px;
+	}
+
+	.subscribefromInputdiv {
+		width: 45% !important;
+	}
+
+	.subscribefromBtndiv {
+		width: 27% !important;
+	}
+
+	.contactMap_sec {
+		padding: 50px 0;
+	}
+
+	.contactPage_banner .banner_con {
+		width: 50% !important;
+	}
+
+	.contactPage_banner .banner_img {
+		width: 50% !important;
+	}
+
+	/* Contact Page end*/
+
 
 }
 
@@ -3853,6 +3934,62 @@ textarea:focus {
 		margin: 5px 0 5px 22px;
 	}
 
+	/* Contact page start */
+
+	.contactPage_banner .banner_con {
+		width: 100% !important;
+	}
+
+	.contactInfo_head .para {
+		padding: 0px 19px;
+		line-height: 28px;
+	}
+
+	.contactInfo_box {
+		width: 377px;
+	}
+
+	.contactInfo_sec {
+		margin: 50px 0;
+	}
+
+	.contactForm_sec {
+		margin-top: 50px;
+	}
+
+	.from_sec .main_head {
+		font-size: 2.2rem;
+		line-height: 45px;
+	}
+
+	.formDiv {
+		width: 100% !important;
+	}
+
+	.subscribefromSec_row {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.subscribefromInputdiv {
+		width: 85% !important;
+		margin-left: 20px;
+	}
+
+	.subscribefromBtndiv {
+		width: 50% !important;
+		margin-left: 20px;
+	}
+
+	.contactPage_subscribeFormBtn {
+		font-size: 14px;
+	}
+
+	.contactInfo_head .main_head {
+		font-size: 2.2rem;
+	}
+
+	/* Contact page end */
 
 }
 
@@ -4000,8 +4137,19 @@ textarea:focus {
 		width: 87%;
 	}
 
-
 	/* product detailes page end*/
+
+	/* Contact page start*/
+
+	.contactInfo_head .para {
+		padding: 0px 9px;
+	}
+
+	.from_sec .main_head {
+		font-size: 2rem;
+	}
+
+	/* Contact page end*/
 
 
 }
@@ -4364,7 +4512,7 @@ textarea:focus {
 		margin: 65px 0;
 	}
 
-	/* product detailes apge start */
+	/* product detailes page start */
 	.proMain-img {
 		height: 310px;
 	}
@@ -4391,9 +4539,21 @@ textarea:focus {
 		padding: 0 15px;
 	}
 
-	/* product detailes apge end */
+	/* product detailes page end */
 
 
+	/* Contact page start */
+
+	.contactInfo_head .main_head {
+		font-size: 2rem;
+	}
+
+	.from_sec .main_head {
+		font-size: 1.7rem;
+		line-height: 36px;
+	}
+
+	/* Contact page end */
 
 
 }
