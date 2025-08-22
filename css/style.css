@@ -2407,7 +2407,7 @@ tfoot td {
 
 .from_sec .sub_head {
 	color: #4b4b4b;
-	font-weight:200;
+	font-weight: 200;
 }
 
 .from_sec .main_head {
@@ -2452,17 +2452,23 @@ textarea:focus {
 
 /* form end*/
 
-
 .contactMap_sec {
 	background-color: white;
 	padding-bottom: 100px;
 }
 
 
-/*  popup msg */
+
+/* Contact page end*/
+
+
+
+
+
+/* Index Page popup msg start*/
+
 .popupMsg {
 	display: none;
-	/* Hidden by default */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -2474,238 +2480,85 @@ textarea:focus {
 	z-index: 1000;
 }
 
-/* .popup-content {
-	background-color: white;
-	padding: 30px;
-	height: auto;
-	border-radius: 8px;
-	max-width: 500px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
-
 .popup-content {
 	background-color: white;
-	padding: 2rem;
 	height: auto;
 	border-radius: 8px;
-	width: 30rem;
+	width: 42rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: 6rem 2rem 2rem 2rem;
-	text-align: justify;
+	text-align: center;
+}
+
+.popupMsg-content h3 {
+	color: darkseagreen;
+	padding-top: 25px;
+}
+
+.popupMsg-content p {
+	padding: 0 67px;
+	color: #575757;
+}
+
+.popupMsg-content a {
+	color: darkseagreen;
+	transition: 0.5s all ease-in;
+}
+
+.popupMsg-content a:hover {
+	color: rgb(129, 168, 129);
+}
+
+.subscribeForm_field {
+	width: 100%;
+	height: 40px;
+	outline: none;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	color: #575757;
+}
+
+.subscribeForm_field:focus {
+	border: 1px solid darkseagreen;
 }
 
 
-/* {
-	padding: 2rem;
-	text-align: center;
-	background: #fff;
-	position: relative;
-	margin: 6rem 2rem 2rem 2rem;
-	width: 30rem;
+.subscribeForm_btn {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	background-color: darkseagreen;
+	border: 1px solid darkseagreen;
+	color: #fff;
+}
 
-} */
+.popupMsg-img img {
+	height: 500px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
 
+.popupMsg-content {
+	padding: 30px;
+}
 
-
-
-
-
-.close-btn {
+#close-btn {
 	position: absolute;
-	top: 10px;
-	right: 20px;
+	top: 0;
+	right: 10px;
 	font-size: 30px;
 	cursor: pointer;
+	color: #1d1d1d;
 }
 
 .close-btn:hover {
 	transform: rotate(180deg);
-	/* color: red; */
 }
 
-.popup_head {
-	margin: 0;
-	font-size: 2rem;
-	line-height: 38px;
-}
-
-.popup_txt1,
-.popup_txt2 {
-	color: #7f7f7f;
-	font-size: 1rem;
-	margin: 1rem 0;
-	line-height: 30px;
-}
-
-#subscribe_form {
-	width: 99%;
-	height: 40px;
-	border: 2px solid darkseagreen;
-	padding-left: 15px;
-	outline: none;
-}
-
-/*  popup msg */
-
-
-
-
-#subscribe_btn {
-	background: darkseagreen;
-	color: white;
-	font-family: inherit;
-	padding: 0.35em;
-	padding-left: 1em;
-	font-size: 17px;
-	font-weight: 500;
-	/* border-radius: 0.4em; */
-	border: none;
-	letter-spacing: 0.05em;
-	display: flex;
-	align-items: center;
-	box-shadow: inset 0 0 1.6em -0.6em darkseagreen;
-	overflow: hidden;
-	position: relative;
-	height: 40px;
-	padding-right: 3.3em;
-	cursor: pointer;
-}
-
-#subscribe_btn .arrowIcon {
-	background: white;
-	margin-left: 1em;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 2em;
-	width: 2.5em;
-	border-radius: 0.2em;
-	box-shadow: 0.1em 0.1em 0.6em 0.2em darkseagreen;
-	right: 0.3em;
-	transition: all 0.3s;
-}
-
-#subscribe_btn:hover .arrowIcon {
-	width: calc(100% - 0.6em);
-}
-
-#subscribe_btn .arrowIcon svg {
-	width: 1.1em;
-	transition: transform 0.3s;
-	color: darkseagreen;
-}
-
-#subscribe_btn:hover .arrowIcon svg {
-	transform: translateX(0.1em);
-}
-
-#subscribe_btn:active .arrowIcon {
-	transform: scale(0.95);
-}
-
-/* form end*/
-
-/* Subscribe From start */
-
-.subscribeFrom_sec {
-	padding: 50px;
-	background-color: whitesmoke;
-	position: relative;
-
-}
-
-.subscribeFrom_container{
-	background-color: white;
-	height: 500px;
-	border-radius: 50px;
-
-}
-
-.subscribefromSec_row {
-	display: flex;
-	justify-content: center;
-}
-
-#contactPage_subscribeForm {
-	width: 98%;
-	height: 2.8rem;
-	outline: navy;
-	background-color: transparent;
-	border: 1px solid whitesmoke;
-	padding-left: 15px;
-
-}
-
-.contactPage_subscribeFormBtn {
-	background:white ;
-	color: darkseagreen;
-	font-family: inherit;
-	padding: 0.35em;
-	padding-left: 1em;
-	font-size: 17px;
-	font-weight: 500;
-	/* border-radius: 0.4em; */
-	border: none;
-	letter-spacing: 0.05em;
-	display: flex;
-	align-items: center;
-	box-shadow: inset 0 0 1.6em -0.6em darkseagreen;
-	overflow: hidden;
-	position: relative;
-	height: 2.8rem;
-	padding-right: 3.3em;
-	cursor: pointer;
-}
-
-.contactPage_subscribeFormBtn .arrowIcon {
-	background: darkseagreen;
-	margin-left: 1em;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 2em;
-	width: 2.5em;
-	border-radius: 0.2em;
-	box-shadow: 0.1em 0.1em 0.6em 0.2em white;
-	right: 0.3em;
-	transition: all 0.3s;
-}
-
-.contactPage_subscribeFormBtn:hover .arrowIcon {
-	width: calc(100% - 0.6em);
-}
-
-.contactPage_subscribeFormBtn .arrowIcon svg {
-	width: 1.1em;
-	transition: transform 0.3s;
-	color: white;
-}
-
-.contactPage_subscribeFormBtn:hover .arrowIcon svg {
-	transform: translateX(0.1em);
-}
-
-.contactPage_subscribeFormBtn:active .arrowIcon {
-	transform: scale(0.95);
-}
-
-/* Subscribe From end */
-
-
-
-/* Contact page end*/
-
-
-
-
+/* Index Page popup msg end*/
 
 
 
@@ -3002,6 +2855,15 @@ textarea:focus {
 	}
 
 	/* Contact Page end*/
+
+	/* Index Page popup msg start*/
+
+	.popup-content {
+		left: 46%;
+	}
+
+	/* Index Page popup msg end*/
+
 
 }
 
@@ -4028,6 +3890,39 @@ textarea:focus {
 
 	/* Contact page end */
 
+
+	/* Index page popup msg start */
+
+	.popupMsg-img {
+		display: none;
+	}
+
+	.popupMsg-content {
+		width: 100% !important;
+	}
+
+	.popup-content {
+		left: 42%;
+		top: 45%;
+		width: 23rem;
+	}
+
+	.popupMsg-content h1 {
+		font-size: 2.5rem;
+	}
+
+	#close-btn {
+		top: -10px;
+		right: 5px;
+	}
+
+	.popupMsg-content h3 {
+		padding-top: 20px;
+	}
+
+	/* Index page popup msg end */
+
+
 }
 
 
@@ -4187,6 +4082,27 @@ textarea:focus {
 	}
 
 	/* Contact page end*/
+
+	/* index page popup msg start*/
+
+	.popup-content {
+		left: 41%;
+		width: 20rem;
+	}
+
+	#close-btn {
+		right: 0px;
+	}
+
+	.popupMsg-content h1 {
+		font-size: 2rem;
+	}
+
+	.popupMsg-content p {
+		padding: 0 31px;
+	}
+
+	/* index page popup msg end*/
 
 
 }
@@ -4403,6 +4319,17 @@ textarea:focus {
 
 	/* product detailes page end */
 
+
+	/* Index page popup msg start */
+
+
+	.popupMsg-content h1 {
+        margin: 12px 0;
+    }
+
+	/* Index page popup msg end */
+
+
 }
 
 
@@ -4591,6 +4518,17 @@ textarea:focus {
 	}
 
 	/* Contact page end */
+
+
+	/* Index page popup msg start */
+
+	.popup-content {
+        left: 40%;
+        width: 18rem;
+    }
+
+	/* Index page popup msg end */
+
 
 
 }

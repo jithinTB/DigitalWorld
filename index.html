@@ -1026,96 +1026,31 @@
 	<!-- popupMsg -->
 
 	<div id="popupMsg" class="popupMsg">
-		<div class="popup-content">
-			<!-- <span class="close-btn" id="close-btn">&times;</span> -->
-			 <i class="fas fa-times close-icon fs-5 mt-4 me-3" id="close-btn"></i>
-			<h2 class="popup_head">Subscribe Now!</h2>
-			<p class="popup_txt2">Get the Latest Details on Upcoming Releases & Offers!</p>
-			<p class="popup_txt1">To receive exclusive details on upcoming product releases, limited-time
-				offers, and everything else you need to know.</p>
 
-			<form action="#" method="post">
-				<div class="col-8 p-0"><input type="text" id="subscribe_form" placeholder="Enter email"></div>
-				<input type="hidden" id="hidden_value">
-				<!-- <button id="subscribe_btn">Submit</button> -->
-				<div class="col-4 p-0">
-					<button id="subscribe_btn">Submit
-						<div class="arrowIcon">
-							<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M0 0h24v24H0z" fill="none"></path>
-								<path
-									d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-									fill="currentColor"></path>
-							</svg>
-						</div>
-					</button>
-				</div>
-			</form>
+		<div class="popup-content">
+
+			<div class="col-5 p-0 popupMsg-img">
+				<img src="images/headphones-green.jpg" alt="headphone" class="img-fluid">
+			</div>
+
+			<div class="col-7 popupMsg-content">
+				<i class="fas fa-times close-icon fs-5 mt-4 me-3" id="close-btn"></i>
+				<h3>SUBSCRIBE AND ENJOY</h3>
+				<h1>10%<br>DISCOUNT</h1>
+				<p>Get 10% off by signing up to our newsletter!</p>
+				<form>
+					<input type="text" class="subscribeForm_field" placeholder="Please Enter Your Name"><br>
+					<input type="text" class="subscribeForm_field" placeholder="Please Enter Your Email Address"><br>
+					<input type="button" class="subscribeForm_btn" value="Subscribe">
+				</form>
+				<a href="#">No,Thank You</a>
+			</div>
+
 		</div>
+
 	</div>
 
 	<!-- popupMsg -->
-
-
-
-
-	<script>
-		// Wait for the page to load completely
-		window.onload = function () {
-			let popup = document.getElementById("popupMsg");
-			let closeBtn = document.getElementById("close-btn");
-			let hidden_value = document.getElementById("hidden_value");
-
-			// Show the popup when the page is loaded
-			 setTimeout(function () {
-			     popup.style.display = "block";
-			 }, 1500);
-
-
-			// Close the popup when the user clicks on the close button
-			closeBtn.onclick = function () {
-				// popup.style.display = "none";
-				$("#popupMsg").fadeOut();
-				hidden_value.value = 1;
-
-			}
-
-			// Optional: Close the popup when clicking outside of the modal
-			window.onclick = function (event) {
-				if (event.target == popup) {
-					$("#popupMsg").fadeOut();
-					hidden_value.value = 1;
-				}
-			}
-		};
-
-		// window.addEventListener('scroll', function () {
-		// 	var popup = document.getElementById("popupMsg");
-		// 	var closeBtn = document.getElementById("close-btn");
-		// 	let hidden_value = document.getElementById("hidden_value");
-
-		// 	const scrollPosition = window.scrollY;
-		// 	if (scrollPosition > 200 && hidden_value.value != 1) {
-		// 		// alert(hidden_value.value);
-
-		// 		popup.style.display = "flex";
-		// 	} else {
-		// 		popup.style.display = "none";
-		// 	}
-		// });
-
-
-
-	</script>
-
-
-
-
-
-
-
-
-
 
 	<!--	Footer-->
 	<div class="container-fluid footer">
@@ -1167,6 +1102,54 @@
 		</div>
 
 	</div>
+
+
+	<script>
+		// Wait for the page to load completely
+		window.onload = function () {
+			let popup = document.getElementById("popupMsg");
+			let closeBtn = document.getElementById("close-btn");
+			let hidden_value = document.getElementById("hidden_value");
+
+			// Show the popup when the page is loaded
+			setTimeout(function () {
+				popup.style.display = "block";
+			}, 1500);
+
+
+			// Close the popup when the user clicks on the close button
+			closeBtn.onclick = function () {
+				// popup.style.display = "none";
+				$("#popupMsg").fadeOut();
+				hidden_value.value = 1;
+
+			}
+
+			// Optional: Close the popup when clicking outside of the modal
+			window.onclick = function (event) {
+				if (event.target == popup) {
+					$("#popupMsg").fadeOut();
+					hidden_value.value = 1;
+				}
+			}
+		};
+
+		// window.addEventListener('scroll', function () {
+		// 	var popup = document.getElementById("popupMsg");
+		// 	var closeBtn = document.getElementById("close-btn");
+		// 	let hidden_value = document.getElementById("hidden_value");
+
+		// 	const scrollPosition = window.scrollY;
+		// 	if (scrollPosition > 200 && hidden_value.value != 1) {
+		// 		// alert(hidden_value.value);
+
+		// 		popup.style.display = "flex";
+		// 	} else {
+		// 		popup.style.display = "none";
+		// 	}
+		// });
+
+	</script>
 
 
 	<!--<script src="js/fontawesome.js"></script>	-->
