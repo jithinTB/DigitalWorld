@@ -2300,12 +2300,12 @@ tfoot td {
 
 .contactInfo_head .sub_head {
 	color: #4b4b4b;
-	font-weight: 500;
+	font-weight: 200;
 }
 
 .contactInfo_head .main_head {
 	font-size: 3rem;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .contactInfo_head .para {
@@ -2407,12 +2407,12 @@ tfoot td {
 
 .from_sec .sub_head {
 	color: #4b4b4b;
-	font-weight: 500;
+	font-weight:200;
 }
 
 .from_sec .main_head {
 	font-size: 3rem;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 56px;
 }
 
@@ -2455,7 +2455,7 @@ textarea:focus {
 
 .contactMap_sec {
 	background-color: white;
-	padding: 100px 0;
+	padding-bottom: 100px;
 }
 
 
@@ -2621,6 +2621,13 @@ textarea:focus {
 
 }
 
+.subscribeFrom_container{
+	background-color: white;
+	height: 500px;
+	border-radius: 50px;
+
+}
+
 .subscribefromSec_row {
 	display: flex;
 	justify-content: center;
@@ -2631,14 +2638,14 @@ textarea:focus {
 	height: 2.8rem;
 	outline: navy;
 	background-color: transparent;
-	border: 1px solid darkseagreen;
+	border: 1px solid whitesmoke;
 	padding-left: 15px;
 
 }
 
 .contactPage_subscribeFormBtn {
-	background: darkseagreen;
-	color: white;
+	background:white ;
+	color: darkseagreen;
 	font-family: inherit;
 	padding: 0.35em;
 	padding-left: 1em;
@@ -2658,7 +2665,7 @@ textarea:focus {
 }
 
 .contactPage_subscribeFormBtn .arrowIcon {
-	background: white;
+	background: darkseagreen;
 	margin-left: 1em;
 	position: absolute;
 	display: flex;
@@ -2667,7 +2674,7 @@ textarea:focus {
 	height: 2em;
 	width: 2.5em;
 	border-radius: 0.2em;
-	box-shadow: 0.1em 0.1em 0.6em 0.2em darkseagreen;
+	box-shadow: 0.1em 0.1em 0.6em 0.2em white;
 	right: 0.3em;
 	transition: all 0.3s;
 }
@@ -2679,7 +2686,7 @@ textarea:focus {
 .contactPage_subscribeFormBtn .arrowIcon svg {
 	width: 1.1em;
 	transition: transform 0.3s;
-	color: darkseagreen;
+	color: white;
 }
 
 .contactPage_subscribeFormBtn:hover .arrowIcon svg {
