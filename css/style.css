@@ -2551,7 +2551,7 @@ textarea:focus {
 	right: 10px;
 	font-size: 30px;
 	cursor: pointer;
-	color: #1d1d1d;
+	color: #575757;
 }
 
 .close-btn:hover {
@@ -2561,7 +2561,185 @@ textarea:focus {
 /* Index Page popup msg end*/
 
 
+/* About page start */
 
+.aboutPage_menubar3 {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: darkseagreen;
+	height: 75px;
+}
+
+.aboutPage_banner {
+	background: url('images/aboutPage-banner.jpg') no-repeat center center/cover;
+	text-align: center;
+	padding: 80px 20px;
+	height: 60vh;
+	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.19);
+}
+
+.aboutPage_banner h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+	margin-top: 5rem;
+}
+
+.aboutPage_banner p {
+	font-size: 1.3rem;
+	color: #575757;
+}
+
+/* Sec1 start */
+.about_sec1,
+.about_sec2,
+.about_sec3,
+.about_sec4{
+	padding: 100px 0;
+}
+
+.div_head {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 32px;
+	color: #111;
+}
+
+.about_sec1 p {
+	text-align: justify;
+	line-height: 34px;
+	color: #575757;
+	font-size: 1.2rem;
+
+}
+
+/* Sec1 end */
+
+
+/* Sec2 start */
+
+.about_sec2 .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.aboutPage_card {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	align-items: center;
+}
+
+.aboutPage_card img {
+	width: 60px;
+	margin-bottom: 15px;
+}
+
+.aboutPage_card h3 {
+	font-size: 1.6rem;
+	line-height: 36px;
+}
+
+.aboutPage_card p {
+	color: #575757;
+}
+
+/* Sec2 end */
+
+/* Sec3 start */
+
+.about_sec3 .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.about_sec3 .card {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	align-items: center;
+}
+
+.about_sec3 .card h5 {
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+.about_sec3 .card p {
+	padding: 5px 0;
+	text-align: justify;
+	margin-bottom: 0;
+	color: #575757;
+	line-height: 30px;
+
+}
+
+/* Sec3 end */
+
+
+/* Vision & Mission */
+
+.about_sec4 img{
+	height: 650px;
+}
+
+.about_sec4 h3{
+	font-size: 3rem;
+	color: #4d4d4d;
+}
+
+.about_sec4 p{
+	font-size: 1.2rem;
+	color: #575757;
+	line-height: 34px;
+	text-align: justify;
+	font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CTA */
+.cta {
+	background: #111;
+	color: white;
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.cta h2 {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.cta a {
+	background: #ff6600;
+	color: white;
+	padding: 12px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.cta a:hover {
+	background: #e65c00;
+}
+
+/* About page start */
 
 
 
@@ -4324,8 +4502,8 @@ textarea:focus {
 
 
 	.popupMsg-content h1 {
-        margin: 12px 0;
-    }
+		margin: 12px 0;
+	}
 
 	/* Index page popup msg end */
 
@@ -4523,9 +4701,9 @@ textarea:focus {
 	/* Index page popup msg start */
 
 	.popup-content {
-        left: 40%;
-        width: 18rem;
-    }
+		left: 40%;
+		width: 18rem;
+	}
 
 	/* Index page popup msg end */
 

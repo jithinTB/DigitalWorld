@@ -1,70 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <style>
-        .container {
-            width: 700px;
-            background-color: darkblue;
-            height: 500px;
-        }
-
-        .form_tag {
-            position: relative;
-            height: 80px;
-            line-height: 80px;
-            padding: 0 50px;
-        }
-
-        input {
-            position: absolute;
-            width: 50%;
-            outline: none;
-            font-size: 1rem;
-            padding: 0 30px;
-            line-height: 40px;
-            border-radius: 10px;
-            border: 1px solid white;
-            background: transparent;
-            transition: 0.1s ease;
-            z-index: 1111;
-        }
-
-        .lable {
-            position: absolute;
-            font-size: 1.5rem;
-            color: white;
-            padding: 0 25px;
-            margin: 0 20px;
-            background-color: green;
-            transition: 0.2s ease;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Digital World</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/fontawesome.css" rel="stylesheet" type="text/css">	-->
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
 </head>
 
 <body>
 
-    <div class="container-fluaid">
+    <!--Navbar-->
+
+    <div class="container-fluid p-0 menubar1">
         <div class="container">
-            <form class="form_tag">
-                <label class="lable">Name</label><br>
-                <input type="text" class="form_field"><br>
-                <label class="lable">Email</label><br>
-                <input type="text" class="form_field"><br>
-                <input type="submit" value="button">
-            </form>
+            <div class="col-3 text-center float-start text-black-50 welcome_txt">Welcome&nbsp;Our&nbsp;Shop</div>
+            <div class="col-2 float-end login"><a class="text-decoration-none" href="login.html"><i
+                        class="fa-solid fa-user"></i><span class="ms-1">Log in</span></a></div>
+            <div class="col-2 float-end registration"><a class="text-decoration-none" href="registration.html"><i
+                        class="fa-solid fa-user"></i><span class="ms-1">Register</span></a></div>
+        </div>
+        <div class="cl"></div>
+        <hr class="m-0">
+    </div>
+
+    <div class="container-fluid p-0 menubar2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 col-md-3 logo text-center"><a class="text-decoration-none" href="index.html">Digital
+                        World</a></div>
+
+                <div class="col-6 col-md-9">
+                    <div class="col-9 search_div">
+                        <form>
+                            <input type="search" id="nav_search" placeholder="What are you looking for?">
+                            <button id="nav_search_Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 menubar2_icons d-flex align-content-between justify-content-around">
+                        <div class="favorite"><a onclick="msg()" class="text-decoration-none" href="#"><i
+                                    class="fa-regular fa-heart fa-xl"></i></a></div>
+                        <div class="cart"><a class="text-decoration-none" href="cart.html"><i
+                                    class="fa-solid fa-cart-plus fa-xl"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="cl"></div>
+    </div>
+
+    <div class="container-fluid p-0 aboutPage_menubar3">
+        <div class="container">
+
+            <div class="col-3">
+                <div class="categry_section">
+                    <div class="select_categry">All categaries<span class="float-end"><i
+                                class="fa-solid fa-angle-down"></i></span></div>
+                    <div class="categry_items">
+                        <div>Phone</div>
+                        <div>Laptop</div>
+                        <div>Tv</div>
+                        <div>Headphone</div>
+                        <div>Watch</div>
+                        <div>Camera</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 menu">
+                <div class="menu_link">
+                    <a class="text-decoration-none menuText" href="index.html">Home</a>
+                    <a class="text-decoration-none menuIcon" href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div class="menu_link">
+                    <a class="text-decoration-none menuText" href="about_page.html">About</a>
+                    <a class="text-decoration-none menuIcon" href="about_page.html"><i
+                            class="fa-solid fa-circle-info"></i></a>
+                </div>
+                <div class="menu_link">
+                    <a class="text-decoration-none menuText" href="product_page.html">Products</a>
+                    <a class="text-decoration-none menuIcon" href="product_page.html"><i
+                            class="fa-solid fa-store"></i></a>
+                </div>
+                <div class="menu_link">
+                    <a class="text-decoration-none menuText" href="contact_page.html">Contact</a>
+                    <a class="text-decoration-none menuIcon" href="contact_page.html"><i
+                            class="fa-solid fa-phone"></i></a>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-1 menu_toggle" id="menu_toggle">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+        <div class="cl"></div>
+        <div class="responsive_menu" id="responsive_menu">
+            <div class="responsive_menu_link"><a class="text-decoration-none" href="index.html">Home</a></div>
+            <div class="responsive_menu_link"><a class="text-decoration-none" href="#">About</a></div>
+            <div class="responsive_menu_link"><a class="text-decoration-none" href="product_page.html">Products</a>
+            </div>
+            <div class="responsive_menu_link"><a class="text-decoration-none" href="contact_page.html">Contact</a></div>
+            <div class="responsive_menu_link_search">
+                <form>
+                    <input type="text" id="responsive_search" placeholder="Search Your Products">
+                    <button id="responsive_search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </div>
     </div>
 
 
 
 
-    <div class="visme_d" data-title="New Customer Sign Up Form" data-url="0vm3rxp9-untitled-project?fullPage=true"
-        data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="141825"></div>
-    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+
+    <!-- banner -->
+    <div class="aboutPage_banner">
+        <h1>Your One-Stop Destination for Electronics</h1>
+        <p>Latest gadgets, unbeatable prices, and trusted service – all in one place.</p>
+    </div>
+    <!-- banner -->
+
+
+
+    <!-- Who We Are -->
+    <div class="container-fluid about_sec1">
+        <div class="container">
+            <h2 class="div_head">Who We Are</h2>
+            <p>
+                Welcome to <b>Digital World,</b> where technology meets trust and innovation is at the heart of
+                everything we do. We are passionate about providing our customers with the latest smartphones, powerful
+                laptops, premium headphones, and a wide range of accessories that make everyday life smarter and more
+                convenient. Our mission is to ensure that everyone, from students and professionals to tech enthusiasts,
+                has access to high-quality electronics at competitive prices. At Digital World, we carefully curate our
+                product selection to include only the most reliable and advanced devices from trusted brands. Beyond
+                just products, we focus on delivering an exceptional shopping experience with secure payments, fast
+                delivery, and dedicated customer support. We believe technology should not just keep you connected but
+                also inspire productivity, creativity, and entertainment. That’s why we are constantly updating our
+                collections to bring you the newest innovations in the digital space. With Digital World, you don’t just
+                buy gadgets—you invest in a lifestyle of convenience, reliability, and trust.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- What We Offer -->
+    <div class="container-fluid about_sec2">
+        <div class="container">
+            <h2 class="div_head">What We Offer</h2>
+            <div class="grid">
+                <div class="aboutPage_card">
+                    <img src="images/icons8-smartphone-67.png" alt="Smartphones">
+                    <h3>Smartphones & Accessories</h3>
+                    <p>Stay connected with the latest mobile technology.</p>
+                </div>
+                <div class="aboutPage_card">
+                    <img src="images/icons8-laptop-64.png" alt="Laptops">
+                    <h3>Laptops &<br> Computers</h3>
+                    <p>From everyday use to professional performance machines.</p>
+                </div>
+                <div class="aboutPage_card">
+                    <img src="images/icons8-headphone-66.png" alt="Headphones">
+                    <h3>Headphones &<br> Audio</h3>
+                    <p>Experience superior sound quality with top brands.</p>
+                </div>
+                <div class="aboutPage_card">
+                    <img src="images/icons8-smart-watch-96 (1).png" alt="Smart Gadgets">
+                    <h3>Smart Gadgets & Wearables</h3>
+                    <p>Make life smarter with innovative devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vision & Mission -->
+
+    <div class="container-fluid about_sec4">
+        <div class="container">
+            <!-- <h2 class="div_head">Our Vision & Mission</h2> -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-6">
+                        <img src="images/camera.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <h3>Our <span style="color: darkseagreen;">Vision</span></h3>
+                        <p>Our vision is to become the most trusted and customer-focused electronic store that inspires innovation and accessibility in technology. We aim to bridge the gap between people and the latest gadgets by making advanced electronics available at affordable prices. In a rapidly evolving digital era, we envision ourselves as a reliable partner who helps individuals, families, and businesses stay connected, productive, and entertained. Our goal is not only to sell products but also to create meaningful experiences that enhance everyday life through technology. We aspire to constantly expand our product range, offering everything from smartphones and laptops to headphones and smart devices under one trusted roof. By combining quality, affordability, and service excellence, we strive to make technology simpler and more approachable for everyone. We see a future where innovation is within everyone’s reach, regardless of their budget or location. Our vision also includes building long-term relationships with customers by ensuring satisfaction and trust at every step. Ultimately, we want to be recognized as a brand that empowers people to embrace the digital future with confidence and convenience.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-6">
+                        <h3>Our <span style="color: darkseagreen;">Mission</span></h3>
+                        <p>Our mission is to make the latest and most reliable technology accessible to everyone, whether for personal use, education, or business. We aim to provide a wide range of electronics, from smartphones and laptops to headphones and smart gadgets, all under one trusted platform. By offering high-quality products at affordable prices, we ensure that our customers can enjoy the best value without compromise. We are committed to delivering not just gadgets but also convenience, reliability, and innovation in every purchase. Customer satisfaction is at the core of everything we do, and we strive to create a seamless shopping experience from browsing to delivery. Through secure transactions, fast shipping, and dedicated support, we work to build lasting trust with our community of buyers. We also focus on keeping up with the latest trends and innovations so our customers always have access to cutting-edge technology. Beyond sales, our mission is to help people stay connected, productive, and entertained through technology. We believe in making electronics a tool for empowerment, not just a luxury. With this mission, we continue to grow as a reliable partner in every customer’s digital journey.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/camera.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Why Choose Us -->
+    <div class="container-fluid about_sec3">
+        <div class="container">
+            <h2 class="div_head">Why Choose Us?</h2>
+            <div class="grid">
+
+                <div class="card">
+                    ✅
+                    <h5>Wide Range of Products</h5>
+                    <p>We offer an extensive selection of smartphones, laptops, headphones, and accessories to meet all
+                        your tech needs in one place.</p>
+                </div>
+
+                <div class="card">
+                    💰
+                    <h5> Affordable Prices</h5>
+                    <p>We offer the latest electronics at competitive prices, ensuring you get the best value without
+                        compromising on quality.</p>
+                </div>
+
+                <div class="card">
+                    🚚
+                    <h5>Fast & Secure Delivery</h5>
+                    <p>We ensure your orders reach you quickly and safely, with reliable shipping you can trust.</p>
+                </div>
+
+                <div class="card">
+                    🤝
+                    <h5>Customer Satisfaction</h5>
+                    <p>We prioritize your happiness by providing reliable products, responsive support, and a seamless
+                        shopping experience every time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- CTA -->
+    <!-- <div class="cta">
+        <h2>Ready to Upgrade Your Tech?</h2>
+        <a href="shop.html">Shop Now</a>
+    </div> -->
 
 
 
@@ -75,6 +272,92 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--	Footer-->
+    <div class="container-fluid footer">
+        <div class="container footer_container">
+
+            <div class="col-12 col-md-6 col-lg-3 footer_con1">
+                <h5>Digital World</h5>
+                <p>Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere
+                    orci dapibus auctor</p>
+                <div class="fooer_icons d-flex gap-lg-5 gap-md-3 mt-4">
+                    <div class="f_icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="f_icon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="f_icon"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con2">
+                <h5>Quick Links</h5>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="index.html">Home</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="about_page.html">About</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="product_page.html">Products</a>
+                </div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="contact_page.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con3">
+                <h5>Shop Now</h5>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Collections</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Featured Products</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Trending Products</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">New Arrivals Products</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-2 text-md-start text-sm-start footer_con4">
+                <h5>Get Help</h5>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">FAQ</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Shipping</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Return</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Order Status</a></div>
+                <div class="col-12 p-0 my-2"><a class="text-decoration-none" href="#">Payment Options</a></div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-3  text-md-center text-sm-start footer_con5">
+                <h5>Contact Us</h5>
+                <button>Get In Touch<span><i class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+
+            <div class="cl"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--<script src="js/fontawesome.js"></script>	-->
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- slick slider js -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
