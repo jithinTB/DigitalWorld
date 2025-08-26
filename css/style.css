@@ -2597,7 +2597,6 @@ textarea:focus {
 .about_sec3,
 .about_sec4 {
 	padding-top: 200px;
-	/* padding-bottom:100px; */
 }
 
 .div_head {
@@ -2609,7 +2608,7 @@ textarea:focus {
 
 .about_sec1 p {
 	text-align: justify;
-	line-height: 34px;
+	line-height: 44px;
 	color: #575757;
 	font-size: 1.2rem;
 
@@ -2702,7 +2701,7 @@ textarea:focus {
 .about_sec4 p {
 	font-size: 1.2rem;
 	color: #575757;
-	line-height: 34px;
+	line-height: 44px;
 	text-align: justify;
 	font-weight: 200;
 }
@@ -2710,15 +2709,16 @@ textarea:focus {
 
 /* Testimonial start*/
 
-.testimonial_sec{
+.testimonial_sec {
 	padding: 100px 0;
 }
 
-.testimonial_con{
-	width: 800px;
+.testimonial_con {
+	width: 100%;
 	height: auto;
-	margin:100px auto;
+	margin: 100px auto;
 	overflow: hidden;
+	position: relative;
 }
 
 .testi_image {
@@ -2727,7 +2727,7 @@ textarea:focus {
 	overflow: hidden;
 	position: relative;
 	border-radius: 50%;
-	margin:auto;
+	margin: auto;
 }
 
 .testi_image img {
@@ -2740,14 +2740,18 @@ textarea:focus {
 	left: 0;
 }
 
-.testimonial_items p{
+.testimonial_items p {
 	padding: 20px 0;
 	color: #575757;
 	line-height: 32px;
 	margin-bottom: 0;
+	width: 800px;
+	text-align: center;
 }
 
-.testimonial_items .testimonial_slide{
+.testimonial_items .testimonial_slide {
+	width: 100%;
+	margin: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3096,6 +3100,41 @@ textarea:focus {
 
 	/* Index Page popup msg end*/
 
+
+	/* About page start */
+
+
+	.about_sec1,
+	.about_sec2,
+	.about_sec3,
+	.about_sec4 {
+		padding-top: 100px;
+	}
+
+	.aboutPage_banner h1 {
+		font-size: 2.5rem;
+		margin-top: 10rem;
+	}
+
+	.aboutPage_banner p {
+		font-size: 1.1rem;
+	}
+
+	.about_sec3 .grid,
+	.about_sec2 .grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.testimonial_items p {
+		width: 775px;
+	}
+
+	.testimonial_sec {
+		padding: 50px 0 0 0;
+	}
+
+
+	/* About page start */
 
 }
 
@@ -3538,6 +3577,16 @@ textarea:focus {
 	.aboutPage_banner {
 		height: 73vh;
 	}
+
+	.aboutPage_banner h1 {
+		font-size: 2.3rem;
+	}
+
+	.testimonial_items p {
+		width: 550px;
+		text-align: justify;
+	}
+
 
 
 }
@@ -4159,6 +4208,37 @@ textarea:focus {
 	/* Index page popup msg end */
 
 
+	/* About page start */
+
+	.aboutPage_banner {
+		height: 79vh;
+	}
+
+	.aboutPage_banner h1 {
+		font-size: 2rem;
+	}
+
+	.aboutPage_banner p {
+		font-size: 1rem;
+	}
+
+	.about_sec1 p {
+		line-height: 38px;
+		font-size: 1rem;
+	}
+
+	.about_sec4 p {
+		line-height: 38px;
+		font-size: 1rem;
+	}
+
+	.testimonial_items p {
+		width: 265px;
+	}
+
+	/* About page end */
+
+
 }
 
 
@@ -4340,6 +4420,19 @@ textarea:focus {
 
 	/* index page popup msg end*/
 
+
+	/* About page start*/
+
+	.aboutPage_banner h1 {
+		font-size: 1.8rem;
+	}
+
+	.testimonial_items p {
+		width: 210px;
+		line-height: 30px;
+	}
+
+	/* About page end*/
 
 }
 
@@ -4566,6 +4659,20 @@ textarea:focus {
 	/* Index page popup msg end */
 
 
+	/* About page start */
+
+	.aboutPage_banner h1 {
+		font-size: 1.7rem;
+		margin-top: 6rem;
+	}
+
+	.aboutPage_banner p {
+		font-size: .9rem;
+	}
+
+	/* About page end */
+
+
 }
 
 
@@ -4766,5 +4873,12 @@ textarea:focus {
 	/* Index page popup msg end */
 
 
+	/* About page start */
+
+	.testimonial_items p {
+		width: 150px;
+	}
+
+	/* About page end */
 
 }
