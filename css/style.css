@@ -2572,17 +2572,18 @@ textarea:focus {
 }
 
 .aboutPage_banner {
-	background: url('images/aboutPage-banner.jpg') no-repeat center center/cover;
+	background: url('../images/aboutPage-banner.jpg') no-repeat center center;
+	background-size: cover;
 	text-align: center;
 	padding: 80px 20px;
-	height: 60vh;
+	height: 75vh;
 	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.19);
 }
 
 .aboutPage_banner h1 {
 	font-size: 3rem;
 	margin-bottom: 10px;
-	margin-top: 5rem;
+	margin-top: 13rem;
 }
 
 .aboutPage_banner p {
@@ -2594,8 +2595,9 @@ textarea:focus {
 .about_sec1,
 .about_sec2,
 .about_sec3,
-.about_sec4{
-	padding: 100px 0;
+.about_sec4 {
+	padding-top: 200px;
+	/* padding-bottom:100px; */
 }
 
 .div_head {
@@ -2667,7 +2669,7 @@ textarea:focus {
 }
 
 .about_sec3 .card h5 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	padding-top: 10px;
 }
 
@@ -2677,7 +2679,10 @@ textarea:focus {
 	margin-bottom: 0;
 	color: #575757;
 	line-height: 30px;
+}
 
+.about_sec3 .card span {
+	font-size: 38px;
 }
 
 /* Sec3 end */
@@ -2685,22 +2690,71 @@ textarea:focus {
 
 /* Vision & Mission */
 
-.about_sec4 img{
+.about_sec4 img {
 	height: 650px;
 }
 
-.about_sec4 h3{
+.about_sec4 h3 {
 	font-size: 3rem;
 	color: #4d4d4d;
 }
 
-.about_sec4 p{
+.about_sec4 p {
 	font-size: 1.2rem;
 	color: #575757;
 	line-height: 34px;
 	text-align: justify;
 	font-weight: 200;
 }
+
+
+/* Testimonial start*/
+
+.testimonial_sec{
+	padding: 100px 0;
+}
+
+.testimonial_con{
+	width: 800px;
+	height: auto;
+	margin:100px auto;
+	overflow: hidden;
+}
+
+.testi_image {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 50%;
+	margin:auto;
+}
+
+.testi_image img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center top;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.testimonial_items p{
+	padding: 20px 0;
+	color: #575757;
+	line-height: 32px;
+	margin-bottom: 0;
+}
+
+.testimonial_items .testimonial_slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Testimonial End*/
 
 
 
@@ -3480,6 +3534,10 @@ textarea:focus {
 	}
 
 	/* Contact Page end*/
+
+	.aboutPage_banner {
+		height: 73vh;
+	}
 
 
 }

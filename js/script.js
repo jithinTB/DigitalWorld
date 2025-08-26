@@ -214,9 +214,6 @@ function validation() {
 }
 
 
-
-
-
 function removeValidation(id, checking) {
 	let fieldId = document.getElementById(id);
 	if (checking == 1) {
@@ -224,9 +221,6 @@ function removeValidation(id, checking) {
 	} else {
 		fieldId.style.borderColor = "darkseagreen";
 	}
-
-
-
 	//	if(name.value!=""){
 	//		name.style.borderBottomColor="green";
 	//	}
@@ -459,4 +453,30 @@ function showAndHide(passwordField, loginHidePasswordIcon, loginShowPasswordIcon
 		loginShowPasswordIcon.style.display = 'block';
 	}
 }
+
+
+
+	// Testimonial slider
+
+ var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+    //   spaceBetween: 30,
+	grabCursor:true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+
+
+
+
 
