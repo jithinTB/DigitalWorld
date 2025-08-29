@@ -17,6 +17,9 @@
 	<!-- slick slider css -->
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 
+	<!--Swiper CSS -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -126,17 +129,33 @@
 				</form>
 			</div>
 		</div>
+		<div class="cl"></div>
+	</div>
+
+	<div class="container-fluid p-0 m-0 hero_sec">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+				<div class="swiper-slide"><img src="images/hreo1.jpg" alt="" class="img-fluid"></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="cl"></div>
 	</div>
 
 
 
-
-
 	<!--banner start-->
-	<div class="container-fluid banner_main p-0">
+	<!-- <div class="container-fluid banner_main p-0">
 		<div class="container">
 			<div class="banner">
-
+				
 				<div class="banner_scroll">
 					<div class="col-8 banner_con">
 						<p class="fw-light sub_head">BEST PRICE</p>
@@ -175,7 +194,7 @@
 			</div>
 		</div>
 		<div class="cl"></div>
-	</div>
+	</div> -->
 
 	<!--banner end-->
 
@@ -1102,6 +1121,29 @@
 		</div>
 
 	</div>
+
+	<!-- Swiper JS -->
+	<script src="js/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 
 
 	<script>
