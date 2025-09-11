@@ -2274,9 +2274,26 @@ tfoot td {
 
 /* Contact page start*/
 
-.contact_banner {
-	height: 45vh;
-	box-shadow: 15px 15px rgba(0, 0, 0, 0.19);
+
+.contactPage_banner {
+	background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/contact_Bg.jpg");
+	background-size: cover;
+	text-align: center;
+	padding: 80px 20px;
+	height: 55vh;
+	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.19);
+}
+
+.contactPage_banner h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+	margin-top: 10rem;
+	color: #fff;
+}
+
+.contactPage_banner p {
+	font-size: 1.3rem;
+	color: #d3d3d3;
 }
 
 .contactInfo_sec {
@@ -2613,7 +2630,7 @@ textarea:focus {
 	color: #d3d3d3;
 }
 
-.about_sec1{
+.about_sec1 {
 	padding-top: 100px;
 }
 
@@ -4164,8 +4181,17 @@ textarea:focus {
 
 	/* Contact page start */
 
-	.contactPage_banner .banner_con {
-		width: 100% !important;
+	.contactPage_banner {
+		background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/contactBg-phn.jpg");
+	}
+
+	.contactPage_banner h1 {
+		font-size: 2rem;
+		margin-top: 4rem;
+	}
+
+	.contactPage_banner p {
+		font-size: 1rem;
 	}
 
 	.contactInfo_head .para {
@@ -4255,12 +4281,12 @@ textarea:focus {
 	/* About page start */
 
 	.aboutPage_banner {
-	background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/aboutBg-phn.jpg");
+		background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/aboutBg-phn.jpg");
 	}
 
 	.aboutPage_banner h1 {
 		font-size: 2rem;
-		 margin-top: 4rem;
+		margin-top: 4rem;
 	}
 
 	.aboutPage_banner p {
