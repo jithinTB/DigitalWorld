@@ -1,4 +1,6 @@
-[
+{
+  "recipes":
+    [
     {
       "id": 1,
       "name": "Classic Margherita Pizza",
@@ -1238,3 +1240,4 @@
       ]
     }
   ]
+}
