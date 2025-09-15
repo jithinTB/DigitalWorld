@@ -3943,7 +3943,7 @@ textarea:focus {
 	}
 
 	.responsive_productDescription-selection {
-		padding: 10px 173px;
+		padding: 10px 0;
 		border: 1px solid #000;
 
 	}
@@ -3966,6 +3966,28 @@ textarea:focus {
 		background-color: darkseagreen;
 		color: white;
 	}
+
+	.responsive_productDescription-items {
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: max-height 0.3s ease, opacity 0.3s ease;
+	}
+
+	.responsive_productDescription-items.show {
+		max-height: 200px;/* adjust depending on how many items */
+		opacity: 1;
+	}
+
+	.responsive_productDescription-selection i {
+		transition: transform 0.3s ease;
+	}
+
+	.responsive_productDescription-selection i.rotate {
+		transform: rotate(180deg);
+	}
+
+
 
 	/* ProductDescription dropDown end*/
 

@@ -300,54 +300,98 @@
 
 			<div class="col-12 p-0">
 				<div class="responsive_productDescription">
-					<div class="responsive_productDescription-selection">Camera
-						<span class="float-end"><i class="fa-solid fa-angle-down"></i></span>
+
+					<div class="responsive_productDescription-selection text-center">
+						<span>Camera</span>
+						<span><i class="fa-solid fa-angle-down"></i></span>
 					</div>
+
 					<div class="responsive_productDescription-items">
+
 						<div class="text-center" id="camera"
-							onclick="showDescription('camera_des','description_head_camera','cameraDiv')">Camera</div>
-						<div class="text-center"
-							onclick="showDescription('display_des','description_head_display','displayDiv')">Display
+							onclick="showDescription('camera_des','description_head_camera','cameraDiv')">
+							Camera
 						</div>
+
 						<div class="text-center"
-							onclick="showDescription('battery_des','description_head_battery','batteryDiv')">Battery
+							onclick="showDescription('display_des','description_head_display','displayDiv')">
+							Display
 						</div>
+
+						<div class="text-center"
+							onclick="showDescription('battery_des','description_head_battery','batteryDiv')">
+							Battery
+						</div>
+
 						<div class="text-center"
 							onclick="showDescription('processor_des','description_head_processor','processorDiv')">
-							Proccessor</div>
+							Proccessor
+						</div>
+
 					</div>
 				</div>
 			</div>
 
 
 			<script>
+				// const selected = document.querySelector('.responsive_productDescription-selection');
+				// const options = document.querySelector('.responsive_productDescription-items');
+				// const camera = document.getElementById('camera');
+
+				// selected.addEventListener("click", () => {
+
+				// 	if (selected.textContent === "Camera") {
+				// 		camera.style.display = "none";
+				// 	}else{
+				// 		camera.style.display = "block";
+				// 	}
+
+				// 	options.style.display = options.style.display === "block" ? "none" : "block";
+
+				// });
+
+				// options.addEventListener("click", (e) => {
+				// 	if (e.target.tagName === "DIV") {
+				// 		selected.textContent = e.target.textContent;
+				// 		options.style.display = "none";
+				// 	}
+				// });
+
+				// document.addEventListener("click", (e) => {
+				// 	if (!e.target.closest(".responsive_productDescription")) {
+				// 		options.style.display = "none";
+				// 	}
+				// });
+
+
 				const selected = document.querySelector('.responsive_productDescription-selection');
+				const selectedText = selected.querySelector("span");
+				const arrowIcon = selected.querySelector("i"); // the angle-down icon
 				const options = document.querySelector('.responsive_productDescription-items');
-				const camera = document.getElementById('camera');
 
 				selected.addEventListener("click", () => {
+					options.classList.toggle("show");
+					arrowIcon.classList.toggle("rotate");
 
-					if (selected.textContent === "Camera") {
-						camera.style.display = "none";
-					}else{
-						camera.style.display = "block";
-					}
-					
-					options.style.display = options.style.display === "block" ? "none" : "block";
-					
-
+					const allOptions = options.querySelectorAll("div");
+					allOptions.forEach(opt => {
+						opt.style.display = (opt.textContent.trim() === selectedText.textContent.trim())
+							? "none" : "block";
+					});
 				});
 
 				options.addEventListener("click", (e) => {
 					if (e.target.tagName === "DIV") {
-						selected.textContent = e.target.textContent;
-						options.style.display = "none";
+						selectedText.textContent = e.target.textContent.trim();
+						options.classList.remove("show");
+						arrowIcon.classList.remove("rotate");
 					}
 				});
 
 				document.addEventListener("click", (e) => {
 					if (!e.target.closest(".responsive_productDescription")) {
-						options.style.display = "none";
+						options.classList.remove("show");
+						arrowIcon.classList.remove("rotate");
 					}
 				});
 
